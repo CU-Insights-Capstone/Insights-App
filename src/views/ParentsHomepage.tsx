@@ -1,7 +1,7 @@
 import React from 'react';
 import { Text } from 'react-native';
 
-const ParentsHomepage = () => {
+const ParentsHomepage = (): JSX.Element => {
     return <Text>Parents</Text>;
 }
 
