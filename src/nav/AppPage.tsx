@@ -31,6 +31,7 @@ const AppPage = (props: AppPageProps) => {
         ? <></>
         : <>
             <Button title='Back' onPress={() => props.setPage(props.details.backButtonDest)}/>
+            { props.details.pageTitle }
             <hr />
         </>; 
     return (
