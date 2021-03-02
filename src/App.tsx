@@ -45,9 +45,6 @@ export const GLOBAL_STYLES = StyleSheet.create({
   global: {
     backgroundColor: '#00B788',
     height: '100%'
-  },
-  buttons: {
-    maxWidth: '150px'
   }
 });
 

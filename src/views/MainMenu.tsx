@@ -11,9 +11,9 @@ const MainMenu = (props: MainMenuProps): JSX.Element => {
     return (
         <View style={GLOBAL_STYLES.buttons}>
             <Button title='For Parents' onPress={() => props.setPage(AppPageTypes.ParentsHomepage)} />
-            <br />
+            <Text>{'\n'}</Text>
             <Button title='For Teachers' onPress={() => props.setPage(AppPageTypes.TeachersHomepage)} />
-            <br />
+            <Text>{"\n"}</Text>
             <Button title='For Kids' onPress={() => props.setPage(AppPageTypes.KidsHomepage)} />
         </View>
     );

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Button } from 'react-native';
+import { Button, Text, View } from 'react-native';
 
 
 export enum AppPageTypes {
@@ -31,8 +31,13 @@ const AppPage = (props: AppPageProps) => {
         ? <></>
         : <>
             <Button title='Back' onPress={() => props.setPage(props.details.backButtonDest)}/>
-            { props.details.pageTitle }
-            <hr />
+            <Text>{ props.details.pageTitle }</Text>
+            <View 
+                style={{
+                    borderBottomColor: 'black',
+                    borderBottomWidth: 1,
+                }}
+                /> 
         </>; 
     return (
         <>
