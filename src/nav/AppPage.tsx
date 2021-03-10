@@ -1,5 +1,5 @@
 import React from 'react';
-import { Button, Text, View } from 'react-native';
+import { Button, Text, View, StyleSheet } from 'react-native';
 
 
 export enum AppPageTypes {
@@ -30,14 +30,21 @@ const AppPage = (props: AppPageProps) => {
     const pageHeader: JSX.Element = props.options && !props.options.includeTitleAndBackButton
         ? <></>
         : <>
-            <Button title='Back' onPress={() => props.setPage(props.details.backButtonDest)}/>
-            <Text>{ props.details.pageTitle }</Text>
-            <View 
+            <View style={styles.navBar}>
+                <View style={styles.backButton}>
+                    <Button title='Back' onPress={() => props.setPage(props.details.backButtonDest)}/>
+                </View>
+                <Text style={{color: 'white', fontSize: 30, fontWeight: 'bold'}}>{ props.details.pageTitle }</Text>
+                <View style={styles.rightSpace}></View>
+            </View>
+            <View
                 style={{
-                    borderBottomColor: 'black',
-                    borderBottomWidth: 1,
+                    alignSelf: 'center',
+                    borderBottomColor: 'white',
+                    borderBottomWidth: 4,
+                    width:'95%'
                 }}
-                /> 
+            />
         </>; 
     return (
         <>
@@ -48,3 +55,25 @@ const AppPage = (props: AppPageProps) => {
 };
 
 export default AppPage;
+
+const styles = StyleSheet.create({
+    navBar: {
+        marginTop: 30,
+        height: 60,
+        flexDirection: 'row',
+        justifyContent: 'space-between',
+        alignItems: 'center'
+    },
+    backButton: {
+      flex: 1,
+      flexDirection: 'row',
+      justifyContent: 'flex-start',
+      marginLeft: 15
+    },
+    rightSpace: {
+      flex: 1,
+      flexDirection: 'row',
+      justifyContent: 'flex-end',
+      alignItems: 'center'
+    },
+});
