@@ -1,10 +1,13 @@
 import React from 'react';
 import { Button, StyleSheet, Text, View } from 'react-native';
+import { useNavigation } from '@react-navigation/native';
 
-const ForParents = ({ navigation }) => {
+const ForTeachers = (): JSX.Element => {
+  const navigation = useNavigation();
+
   return (
     <View style={styles.container}>
-      <Text>For Parents</Text>
+      <Text>For Teachers</Text>
 
       {BUTTONS.map((button, i) => (
         <Button
@@ -21,22 +24,22 @@ const BUTTONS = [
   {
     pathName: 'Meet the Kids',
     title: 'Meet the Kids',
-    color: '#28CBD3'
+    color: '#AD056C'
   },
   {
     pathName: 'Insights on INSIGHTS Blog',
     title: 'Insights on Insights Blog',
-    color: '#28CBD3'
+    color: '#AD056C'
   },
   {
     pathName: 'INSIGHTS Podcast',
     title: 'INSIGHTS Podcast',
-    color: '#28CBD3'
+    color: '#AD056C'
   },
   {
     pathName: 'Temperament Profile Survey',
     title: 'Temperament Profile Survey',
-    color: '#28CBD3'
+    color: '#AD056C'
   },
 ]
 
@@ -48,4 +51,4 @@ const styles = StyleSheet.create({
   }
 })
 
-export default ForParents;
+export default ForTeachers;

@@ -1,11 +1,10 @@
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 
-const MeetTheKids = () => {
+const ForKids = (): JSX.Element => {
   return (
     <View style={styles.container}>
-      <Text>Meet the Kids</Text>
-      <Text>(put a carosel here)</Text>
+      <Text>For Kids</Text>
     </View>
   );
 }
@@ -18,4 +17,4 @@ const styles = StyleSheet.create({
   }
 })
 
-export default MeetTheKids;
+export default ForKids;

@@ -1,9 +1,12 @@
 import React from 'react';
 import { Button, Image, ImageBackground, Linking, StyleSheet, Text, View } from 'react-native';
 import { SocialIcon, Icon } from 'react-native-elements'
+import { useNavigation } from '@react-navigation/native';
 
 
-const Home = ({ navigation }) => {
+const Home = () => {
+  const navigation = useNavigation();
+
   return (
     <ImageBackground source={require('../assets/background.png')} style={styles.backgroundImage}>
       <View>

@@ -1,6 +1,6 @@
 import React from 'react';
 import { DefaultTheme, NavigationContainer } from '@react-navigation/native';
-import { createStackNavigator } from '@react-navigation/stack';
+import { createStackNavigator, StackScreenProps  } from '@react-navigation/stack';
 
 import ForKids from './views/ForKids';
 import ForParents from './views/ForParents';
@@ -10,7 +10,7 @@ import MeetTheKids from './views/MeetTheKids';
 
 const Stack = createStackNavigator();
 
-const App = () => {
+const App = (): JSX.Element => {
   return (
       <NavigationContainer theme={INSIGHTSTheme}>
         <Stack.Navigator initialRouteName='Home'>
