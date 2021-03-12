@@ -6,6 +6,7 @@ import Blog from './views/Blog';
 import ForKids from './views/ForKids';
 import ForParents from './views/ForParents';
 import ForTeachers from './views/ForTeachers';
+import Games from './views/Games';
 import Home from './views/Home';
 import MeetTheKids from './views/MeetTheKids';
 import Podcast from './views/Podcast';
@@ -24,11 +25,13 @@ const App = (): JSX.Element => {
 
           <Stack.Screen name='For Kids' component={ForKids} />
 
-          <Stack.Screen name='Meet the Kids' component={MeetTheKids} />
+          <Stack.Screen name='Meet the Kids' component={MeetTheKids} initialParams={{ simple: false }} />
 
           <Stack.Screen name='INSIGHTS Blog' component={Blog} />
 
           <Stack.Screen name='INSIGHTS Podcast' component={Podcast} />
+
+          <Stack.Screen name='Games' component={Games} />
         </Stack.Navigator>
       </NavigationContainer>
   );

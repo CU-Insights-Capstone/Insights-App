@@ -1,7 +1,7 @@
+import { useNavigation } from '@react-navigation/native';
 import React from 'react';
 import { Button, Image, ImageBackground, Linking, StyleSheet, Text, View } from 'react-native';
 import { SocialIcon, Icon } from 'react-native-elements'
-import { useNavigation } from '@react-navigation/native';
 
 import InsightsButton from '../components/InsightsButton';
 
@@ -21,7 +21,11 @@ const Home = () => {
         </View>
         <View style={styles.buttonContainer}>
           {BUTTONS.map((button, i) => (
-            <InsightsButton color={button.color} pathName={button.pathName} key={i} title={button.title}/>
+            <InsightsButton 
+              color={button.color} 
+              key={i} title={button.title} 
+              onClick={() => navigation.navigate(button.pathName)}
+              title={button.title}/>
           ))}
         </View>
         <View style={{ alignItems: 'center' }}>
