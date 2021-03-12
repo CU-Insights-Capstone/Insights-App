@@ -2,6 +2,7 @@ import React from 'react';
 import { DefaultTheme, NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator, StackScreenProps  } from '@react-navigation/stack';
 
+import Blog from './views/Blog';
 import ForKids from './views/ForKids';
 import ForParents from './views/ForParents';
 import ForTeachers from './views/ForTeachers';
@@ -15,6 +16,7 @@ const App = (): JSX.Element => {
       <NavigationContainer theme={INSIGHTSTheme}>
         <Stack.Navigator initialRouteName='Home'>
           <Stack.Screen name='Home' component={Home} options={{headerShown: false}}/>
+
           <Stack.Screen name='For Parents' component={ForParents} />
 
           <Stack.Screen name='For Teachers' component={ForTeachers} />
@@ -22,6 +24,8 @@ const App = (): JSX.Element => {
           <Stack.Screen name='For Kids' component={ForKids} />
 
           <Stack.Screen name='Meet the Kids' component={MeetTheKids} />
+
+          <Stack.Screen name='INSIGHTS Blog' component={Blog} />
         </Stack.Navigator>
       </NavigationContainer>
   );

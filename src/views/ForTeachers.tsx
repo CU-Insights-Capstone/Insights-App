@@ -23,7 +23,7 @@ const BUTTONS = [
     color: '#AD056C'
   },
   {
-    pathName: 'Insights on INSIGHTS Blog',
+    pathName: 'INSIGHTS Blog',
     title: 'Insights on Insights Blog',
     color: '#AD056C'
   },
