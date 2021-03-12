@@ -2,19 +2,15 @@ import React from 'react';
 import { Button, StyleSheet, Text, View } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
 
+import InsightsButton from '../components/InsightsButton';
+
 const ForTeachers = (): JSX.Element => {
   const navigation = useNavigation();
 
   return (
     <View style={styles.container}>
-      <Text>For Teachers</Text>
-
       {BUTTONS.map((button, i) => (
-        <Button
-          color={button.color}
-          key={i}
-          onPress={() => navigation.navigate(button.pathName)} 
-          title={button.title}/>
+        <InsightsButton color={button.color} pathName={button.pathName} key={i} title={button.title} />
       ))}
     </View>
   );

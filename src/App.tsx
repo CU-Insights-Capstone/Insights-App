@@ -31,7 +31,7 @@ const INSIGHTSTheme = {
   ...DefaultTheme,
   colors: {
     ...DefaultTheme.colors,
-    background: '#00B788'
+    background: '#00B788',
   },
 };
 
