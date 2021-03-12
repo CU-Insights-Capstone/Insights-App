@@ -8,6 +8,7 @@ import ForParents from './views/ForParents';
 import ForTeachers from './views/ForTeachers';
 import Home from './views/Home';
 import MeetTheKids from './views/MeetTheKids';
+import Podcast from './views/Podcast';
 
 const Stack = createStackNavigator();
 
@@ -26,6 +27,8 @@ const App = (): JSX.Element => {
           <Stack.Screen name='Meet the Kids' component={MeetTheKids} />
 
           <Stack.Screen name='INSIGHTS Blog' component={Blog} />
+
+          <Stack.Screen name='INSIGHTS Podcast' component={Podcast} />
         </Stack.Navigator>
       </NavigationContainer>
   );

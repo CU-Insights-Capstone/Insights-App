@@ -1,12 +1,9 @@
 import React from 'react';
-import { Button, StyleSheet, Text, View } from 'react-native';
-import { useNavigation } from '@react-navigation/native';
+import { StyleSheet, View } from 'react-native';
 
 import InsightsButton from '../components/InsightsButton';
 
 const ForTeachers = (): JSX.Element => {
-  const navigation = useNavigation();
-
   return (
     <View style={styles.container}>
       {BUTTONS.map((button, i) => (
