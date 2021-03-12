@@ -3,6 +3,8 @@ import { Button, Image, ImageBackground, Linking, StyleSheet, Text, View } from 
 import { SocialIcon, Icon } from 'react-native-elements'
 import { useNavigation } from '@react-navigation/native';
 
+import InsightsButton from '../components/InsightsButton';
+
 
 const Home = () => {
   const navigation = useNavigation();
@@ -19,12 +21,7 @@ const Home = () => {
         </View>
         <View style={styles.buttonContainer}>
           {BUTTONS.map((button, i) => (
-            <View key={i} style={styles.buttons}>
-              <Button
-                color={button.color}
-                onPress={() => navigation.navigate(button.pathName)}
-                title={button.title} />
-            </View>
+            <InsightsButton color={button.color} pathName={button.pathName} key={i} title={button.title}/>
           ))}
         </View>
         <View style={{ alignItems: 'center' }}>
@@ -76,13 +73,6 @@ const BUTTONS = [
 const styles = StyleSheet.create({
   buttonContainer: {
     alignItems: 'center',
-  },
-  buttons: {
-    width: '70%',
-    borderWidth: 3,
-    borderColor: '#fff',
-    borderRadius: 5,
-    marginBottom: 20
   },
   logo: {
     flex: 1,
