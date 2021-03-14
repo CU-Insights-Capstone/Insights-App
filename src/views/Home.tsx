@@ -25,7 +25,7 @@ const Home = () => {
               color={button.color} 
               key={i} title={button.title} 
               onClick={() => navigation.navigate(button.pathName)}
-              title={button.title}/>
+              />
           ))}
         </View>
         <View style={{ alignItems: 'center' }}>
