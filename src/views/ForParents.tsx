@@ -1,6 +1,6 @@
 import { useNavigation } from '@react-navigation/native';
 import React from 'react';
-import { StyleSheet, View } from 'react-native';
+import {Linking, StyleSheet, View} from 'react-native';
 import { Icon } from 'react-native-elements'
 
 import InsightsButton from '../components/InsightsButton';

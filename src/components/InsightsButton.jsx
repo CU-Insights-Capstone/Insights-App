@@ -30,7 +30,7 @@ InsightsButton.defaultProps = {
 InsightsButton.propTypes = {
   color: PropTypes.string,
   onClick: PropTypes.func.isRequired,
-  title: PropTypes.title
+  title: PropTypes.string
 }
 
 export default InsightsButton;
