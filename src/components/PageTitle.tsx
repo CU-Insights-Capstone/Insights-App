@@ -1,7 +1,7 @@
 import React from 'react';
 import { StyleSheet, View, Text } from 'react-native';
-import globalStyles from '../../../styles/global'
-import TextPageHeader from '../../components/texts/TextPageHeader';
+import globalStyles from '../../styles/global'
+import TextPageHeader from './texts/TextPageHeader';
 
 interface PageTitleProps {
     title: string

@@ -1,6 +1,6 @@
 import React from 'react';
 import { ImageBackground, View } from 'react-native';
-import PageTitle from './PageTitle';
+import PageTitle from '../../components/PageTitle';
 import globalStyles from '../../../styles/global';
 
 const bg = require('../../assets/background.png');
