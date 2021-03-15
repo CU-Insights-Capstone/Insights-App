@@ -2,12 +2,13 @@ import { useNavigation } from '@react-navigation/native';
 import React from 'react';
 import { StyleSheet, View } from 'react-native';
 
-import InsightsButton from '../components/InsightsButton';
+import InsightsButton from '../../../components/InsightsButton';
+import AppPage from '../../common/AppPage';
 
 const ForKids = (): JSX.Element => {
   const navigation = useNavigation();
 
-  return (
+  const pageContent = (
     <View style={styles.container}>
       <View style={styles.buttonContainer}>
         <InsightsButton
@@ -22,6 +23,8 @@ const ForKids = (): JSX.Element => {
       </View>
     </View>
   );
+
+  return <AppPage display={pageContent} title='Kids' />
 }
 
 const styles = StyleSheet.create({

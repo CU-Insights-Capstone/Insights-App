@@ -2,7 +2,13 @@ import PropTypes from 'prop-types';
 import React from 'react';
 import { Button, StyleSheet, View } from 'react-native';
 
-const InsightsButton = ({color, onClick, title}) => {
+interface InsightsButtonProps {
+  color: string;
+  onClick: () => void;
+  title: string;
+}
+
+const InsightsButton = ({color = '#FFFFFF', onClick, title = 'Button'}: InsightsButtonProps) => {
   return (
     <View style={styles.buttons}>
       <Button
@@ -21,16 +27,5 @@ const styles = StyleSheet.create({
     marginBottom: 20
   },
 })
-
-InsightsButton.defaultProps = {
-  color: '#FFFFFF',
-  title: 'Button'
-}
-
-InsightsButton.propTypes = {
-  color: PropTypes.string,
-  onClick: PropTypes.func.isRequired,
-  title: PropTypes.string
-}
 
 export default InsightsButton;

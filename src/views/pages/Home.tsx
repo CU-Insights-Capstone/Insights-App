@@ -3,19 +3,20 @@ import React from 'react';
 import { Button, Image, ImageBackground, Linking, StyleSheet, Text, View } from 'react-native';
 import { SocialIcon, Icon } from 'react-native-elements'
 
-import InsightsButton from '../components/InsightsButton';
+import InsightsButton from '../../components/InsightsButton';
+import AppPage from '../common/AppPage';
 
+const insights_logo = require('../../assets/INSIGHTS_Main_Logo.png');
 
 const Home = () => {
   const navigation = useNavigation();
 
-  return (
-    <ImageBackground source={require('../assets/background.png')} style={styles.backgroundImage}>
+  const pageContent = (
       <View>
         <View style={styles.logoContainer}>
           <Image
             resizeMode='contain'
-            source={require('../assets/INSIGHTS_Main_Logo.png')}
+            source={insights_logo}
             style={styles.logo}
           />
         </View>
@@ -52,8 +53,9 @@ const Home = () => {
           <SocialIcon onPress={() => Linking.openURL('https://www.instagram.com/insightsintervention/')} type='instagram' light />
         </View>
       </View>
-    </ImageBackground>
   );
+
+  return <AppPage display={pageContent} />;
 }
 
 const BUTTONS = [
@@ -81,6 +83,8 @@ const styles = StyleSheet.create({
   logo: {
     flex: 1,
     resizeMode: 'contain',
+    height: '100%',
+    width: '100%'
   },
   logoContainer: {
     alignItems: 'center',

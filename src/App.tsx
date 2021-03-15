@@ -2,14 +2,14 @@ import React from 'react';
 import { DefaultTheme, NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator, StackScreenProps  } from '@react-navigation/stack';
 
-import Blog from './views/Blog';
-import ForKids from './views/ForKids';
-import ForParents from './views/ForParents';
-import ForTeachers from './views/ForTeachers';
-import Games from './views/Games';
-import Home from './views/Home';
-import MeetTheKids from './views/MeetTheKids';
-import Podcast from './views/Podcast';
+import Blog from './views/pages/common/Blog';
+import ForKids from './views/pages/kids/ForKids';
+import ForParents from './views/pages/parents/ForParents';
+import ForTeachers from './views/pages/teachers/ForTeachers';
+import Games from './views/pages/kids/Games';
+import Home from './views/pages/Home';
+import MeetTheKids from './views/pages/common/MeetTheKids';
+import Podcast from './views/pages/common/Podcasts';
 
 const Stack = createStackNavigator();
 
