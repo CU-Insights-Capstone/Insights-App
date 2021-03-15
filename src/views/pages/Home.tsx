@@ -2,6 +2,7 @@ import { useNavigation } from '@react-navigation/native';
 import React from 'react';
 import { Button, Image, ImageBackground, Linking, StyleSheet, Text, View } from 'react-native';
 import { SocialIcon, Icon } from 'react-native-elements'
+import AppImage from '../../components/AppImage';
 
 import InsightsButton from '../../components/InsightsButton';
 import AppPage from '../common/AppPage';
@@ -14,11 +15,7 @@ const Home = () => {
   const pageContent = (
       <View>
         <View style={styles.logoContainer}>
-          <Image
-            resizeMode='contain'
-            source={insights_logo}
-            style={styles.logo}
-          />
+          <AppImage source={insights_logo}/>
         </View>
         <View style={styles.buttonContainer}>
           {BUTTONS.map((button, i) => (
@@ -79,12 +76,6 @@ const BUTTONS = [
 const styles = StyleSheet.create({
   buttonContainer: {
     alignItems: 'center',
-  },
-  logo: {
-    flex: 1,
-    resizeMode: 'contain',
-    height: '100%',
-    width: '100%'
   },
   logoContainer: {
     alignItems: 'center',
