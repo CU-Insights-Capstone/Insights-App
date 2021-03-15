@@ -25,7 +25,6 @@ const globalStyles = StyleSheet.create({
             width: 3,
             height: 3,
         },
-        textShadowOpacity: 0.01,
         textShadowRadius: 4.65,
 
         elevation: 6,
