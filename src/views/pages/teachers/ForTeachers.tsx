@@ -42,7 +42,7 @@ const BUTTONS = [
     title: 'INSIGHTS Podcast',
     color: '#AD056C'
   }
-]
+];
 
 const styles = StyleSheet.create({
   container: {
@@ -50,6 +50,6 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center'
   }
-})
+});
 
 export default ForTeachers;

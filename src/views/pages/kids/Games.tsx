@@ -16,4 +16,4 @@ const Games = () => {
   return <AppPage display={pageContent} title='Games' />;
 }
 
-export default Games
+export default Games;

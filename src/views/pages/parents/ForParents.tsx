@@ -47,6 +47,6 @@ const BUTTONS = [
 ]
 
 const styles = StyleSheet.create({
-})
+});
 
 export default ForParents;

@@ -3,7 +3,7 @@ import { StyleSheet, SafeAreaView, View, Text, ImageBackground } from 'react-nat
 import TextNeutraBold from './texts/TextNeutraBold';
 import TextDescription from './texts/TextDescription';
 
-interface Props {
+interface CarouselProps {
     description: string[],
     personalityType: string[],
     images: string[],
@@ -13,7 +13,7 @@ interface Props {
     isSimple: boolean,
 }
 
-const Carousel = ({personalityType, description, images, names, characteristics, arrowDirection, isSimple}: Props) => {
+const Carousel = ({personalityType, description, images, names, characteristics, arrowDirection, isSimple}: CarouselProps) => {
     return (
         <>
             <SafeAreaView>
@@ -25,6 +25,6 @@ const Carousel = ({personalityType, description, images, names, characteristics,
 }
 
 const styles = StyleSheet.create({
-})
+});
 
 export default Carousel;

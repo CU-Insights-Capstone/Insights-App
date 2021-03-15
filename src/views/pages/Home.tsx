@@ -71,7 +71,7 @@ const BUTTONS = [
     title: 'For Kids',
     color: '#FF8D00'
   },
-]
+];
 
 const styles = StyleSheet.create({
   buttonContainer: {

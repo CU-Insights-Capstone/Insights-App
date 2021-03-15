@@ -16,4 +16,4 @@ const Blog = () => {
   return <AppPage display={pageContent} title='Blog' />;
 }
 
-export default Blog
+export default Blog;
