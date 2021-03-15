@@ -1,26 +1,34 @@
 import { useNavigation } from '@react-navigation/native';
 import React from 'react';
-import {Linking, StyleSheet, View} from 'react-native';
+
+import { ImageBackground, Linking, StyleSheet, View } from 'react-native';
 import { Icon } from 'react-native-elements'
+import PageTitle from "../components/PageTitle";
+import globalStyles from "../../styles/global";
 
 import InsightsButton from '../components/InsightsButton';
+
+const bg = require('../assets/background.png');
 
 const ForParents = (): JSX.Element => {
   const navigation = useNavigation();
 
   return (
-    <View style={styles.container}>
-      {BUTTONS.map((button, i) => (
+    <ImageBackground source={bg} style={globalStyles.backgroundImage}>
+      <PageTitle title={'Parents'}/>
+      <View style={globalStyles.container}>
+        {BUTTONS.map((button, i) => (
         <InsightsButton
-          color={button.color}
-          key={i} title={button.title}
-          onClick={() => navigation.navigate(button.pathName)} />))}
-      <InsightsButton
-        color={'#28CBD3'}
-        title={'Temperament Profile Survey'}
-        // TODO: change this to the link that is actually is, not google.
-        onClick={() => Linking.openURL('https://www.google.com')} />
-    </View>
+            color={button.color}
+            key={i} title={button.title}
+            onClick={() => navigation.navigate(button.pathName)} />))}
+        <InsightsButton
+          color={'#28CBD3'}
+          title={'Temperament Profile Survey'}
+          // TODO: change this to the link that is actually is, not google.
+          onClick={() => Linking.openURL('https://www.google.com')} />
+      </View>
+    </ImageBackground>
   );
 }
 
@@ -43,11 +51,6 @@ const BUTTONS = [
 ]
 
 const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    alignItems: 'center',
-    justifyContent: 'center'
-  }
 })
 
 export default ForParents;
