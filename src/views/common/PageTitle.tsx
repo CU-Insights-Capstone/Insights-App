@@ -1,7 +1,7 @@
 import React from 'react';
 import { StyleSheet, SafeAreaView, View, Text, ImageBackground } from 'react-native';
 import { useFonts } from 'expo-font';
-import globalStyles from '../../styles/global'
+import globalStyles from '../../../styles/global'
 
 interface Props {
     title: string
@@ -9,7 +9,7 @@ interface Props {
 
 const PageTitle = ({title}: Props) => {
     let [isFontsLoaded] = useFonts({
-        NeutraTextBold: require('../assets/fonts/NeutraText-Bold.ttf'),
+        NeutraTextBold: require('../../assets/fonts/NeutraText-Bold.ttf'),
     });
 
     return (

@@ -1,7 +1,6 @@
 import React from 'react';
-import { useNavigation } from '@react-navigation/native';
 import { ImageBackground, View } from 'react-native';
-import PageTitle from '../../components/PageTitle';
+import PageTitle from './PageTitle';
 import globalStyles from '../../../styles/global';
 
 const bg = require('../../assets/background.png');
