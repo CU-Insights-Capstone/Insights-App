@@ -1,9 +1,10 @@
 import { useNavigation } from '@react-navigation/native';
 import React from 'react';
-import {ImageBackground, Linking, StyleSheet, View} from 'react-native';
-import globalStyles from "../../styles/global";
+
+import { ImageBackground, Linking, StyleSheet, View } from 'react-native';
 import { Icon } from 'react-native-elements'
 import PageTitle from "../components/PageTitle";
+import globalStyles from "../../styles/global";
 
 import InsightsButton from '../components/InsightsButton';
 
