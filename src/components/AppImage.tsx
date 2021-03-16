@@ -4,6 +4,7 @@ import { Image } from 'react-native';
 interface AppImageProps {
     source: any;
     style?: any;
+    onClick?: () => void;
 }
 
 const AppImage = ({source, style = defaultStyle }: AppImageProps): JSX.Element => {

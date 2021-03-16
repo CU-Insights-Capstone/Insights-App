@@ -1,30 +1,126 @@
-import React from 'react';
-import { StyleSheet, SafeAreaView, View, Text, ImageBackground } from 'react-native';
+import React, { useState } from 'react';
+import {StyleSheet, TouchableWithoutFeedback, View} from 'react-native';
 import TextNeutraBold from './texts/TextNeutraBold';
 import TextDescription from './texts/TextDescription';
+import AppImage from "./AppImage";
+import globalStyles from "../../styles/global";
 
-interface CarouselProps {
-    description: string[],
-    personalityType: string[],
-    images: string[],
-    names: string[],
+export interface CarouselPage {
+    description: string,
+    personalityType: string,
+    images: [string, string],
+    names: [string, string],
     characteristics: string[],
     arrowDirection: string[],
+    backgroundColor: string,
+}
+
+interface CarouselProps {
+    pages: CarouselPage[],
     isSimple: boolean,
 }
 
-const Carousel = ({personalityType, description, images, names, characteristics, arrowDirection, isSimple}: CarouselProps) => {
+const leftArrow = require('../assets/keyboard_arrow_left-24px.svg');
+const rightArrow = require('../assets/keyboard_arrow_right-24px.svg');
+const upArrow = require('../assets/arrow-up-circle.svg');
+const downArrow = require('../assets/arrow-down-circle.svg');
+
+const Carousel = ({pages, isSimple}: CarouselProps) => {
+    const [pageNumber, setPageNumber] = useState(0);
+
+    const rightClickHandler = () => {
+        if (pageNumber != 3) setPageNumber(pageNumber + 1);
+    }
+
+    const leftClickHandler = () => {
+        if (pageNumber != 0) setPageNumber(pageNumber - 1);
+    }
+
+    const image1 = pages[pageNumber].images[0];
+    const image2 = pages[pageNumber].images[1];
+
     return (
         <>
-            <SafeAreaView>
-                <TextNeutraBold>Custom Font</TextNeutraBold>
-                <TextDescription>Open Sans Regular</TextDescription>
-            </SafeAreaView>
+            <View style={[styles.card, {backgroundColor: pages[pageNumber].backgroundColor}, globalStyles.dropShadow]}>
+                <TextNeutraBold color={'white'} style={[styles.personalityTypeTitle, globalStyles.alignCenter]}>
+                    {pages[pageNumber].personalityType.toUpperCase()}
+                </TextNeutraBold>
+                <TextDescription style={[globalStyles.alignCenter, styles.description]}>
+                    {pages[pageNumber].description}
+                </TextDescription>
+                <View style={globalStyles.horizontalAlign}>
+                    <AppImage source={image1} style={[styles.image, {marginRight: 10}]}></AppImage>
+                    <AppImage source={image2} style={[styles.image, {marginLeft: 10}]}></AppImage>
+                </View>
+                <View style={globalStyles.horizontalAlign}>
+                    <TextNeutraBold color={'white'} style={[styles.name, globalStyles.alignCenter, {marginRight: 10}]}>
+                        {pages[pageNumber].names[0].toUpperCase()}
+                    </TextNeutraBold>
+                    <TextNeutraBold color={'white'} style={[styles.name, globalStyles.alignCenter, {marginLeft: 10}]}>
+                        {pages[pageNumber].names[1].toUpperCase()}
+                    </TextNeutraBold>
+                </View>
+                <View>
+                    {/*TO:DO Fix this so that index can be used also for arrow direction.*/}
+                    {pages[pageNumber].arrowDirection.map((direction, i) => {
+                        <AppImage source={direction == 'Up' ? upArrow : downArrow}/>
+                    })}
+                    {pages[pageNumber].characteristics.map((characteristic, index) =>
+                        <>
+                            <TextNeutraBold color={'white'} style={[styles.characteristicsText]}>{characteristic}{'\n'}</TextNeutraBold>
+                        </>
+                    )}
+                </View>
+            </View>
+            {/*TO:DO Get callback functions to work.*/}
+            <TouchableWithoutFeedback onPress={leftClickHandler}>
+                <AppImage source={leftArrow}/>
+            </TouchableWithoutFeedback>
+            <TouchableWithoutFeedback onPress={rightClickHandler}>
+                <AppImage source={rightArrow}/>
+            </TouchableWithoutFeedback>
+
         </>
     );
 }
 
 const styles = StyleSheet.create({
+    card: {
+        width: '90%',
+        height: '85%',
+        borderRadius: 10,
+        borderWidth: 4,
+        borderColor: '#fff',
+        marginBottom: 5,
+        paddingTop: 10,
+        paddingRight: 10,
+        paddingLeft: 10,
+        paddingBottom: 5
+    },
+    characteristicsText: {
+        fontSize: 21,
+        marginTop: 8,
+    },
+    description: {
+        fontSize: 16,
+        marginTop: 15
+    },
+    image: {
+        width: 125,
+        height: 125,
+        borderRadius: 125 / 2,
+        borderWidth: 10,
+        borderColor: '#fff',
+        backgroundColor: '#fff'
+    },
+    name: {
+        fontSize: 26,
+        marginTop: 10,
+    },
+    personalityTypeTitle: {
+        fontSize: 26,
+        marginTop: 5
+    }
 });
 
 export default Carousel;
