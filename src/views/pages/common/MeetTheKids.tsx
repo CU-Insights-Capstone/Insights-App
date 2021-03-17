@@ -13,7 +13,8 @@ const pages: CarouselPage[] = [
         names: ['Gregory', 'Gretchen'],
         characteristics: ['High in Negative Reactivity', 'Low in Task Persistence', 'High in Activity'],
         arrowDirection: ['Up', 'Down', 'Up'],
-        backgroundColor: '#8B6BAF'
+        backgroundColor: '#8B6BAF',
+        link: 'https://insightsintervention.com/meet-the-kids/high-maintenance/'
     },
     {
         description: 'Industrious children demonstrate both high task persistence and low motor activity, which enables them to get things done. They take pleasure in their accomplishments. They are also low in negative reactivity, which means they are pleasant most of the time.',
@@ -22,7 +23,8 @@ const pages: CarouselPage[] = [
         names: ['Hilary', 'Henry'],
         characteristics: ['Low in Negative Reactivity', 'High in Task Persistence', 'Low in Activity'],
         arrowDirection: ['Down', 'High', 'Low'],
-        backgroundColor: '#FF8D00'
+        backgroundColor: '#FF8D00',
+        link: 'https://insightsintervention.com/meet-the-kids/industrious/'
     },
     {
         description: 'Cautious children are often shy and slow to warm-up. They are low in approach, which means their first reaction is to withdraw from new or stressful situations. They also demonstrate high negative reactivity and will let you know when they are not pleased with a situation.',
@@ -31,7 +33,8 @@ const pages: CarouselPage[] = [
         names: ['Coretta', 'Carlos'],
         characteristics: ['High in Negative Reactivity', 'High in Withdrawal'],
         arrowDirection: ['Up', 'Up'],
-        backgroundColor: '#AD056C'
+        backgroundColor: '#AD056C',
+        link: 'https://insightsintervention.com/meet-the-kids/shy-and-cautious/'
     },
     {
         description: 'Social children are eager to meet new people. They are high in approach, often driven by a need to be with people and to try new experiences. Their temperaments are low in negative reactivity and withdrawal, which means they are usually pleasant most of the time.',
@@ -40,7 +43,8 @@ const pages: CarouselPage[] = [
         names: ['Fredrico', 'Felicity'],
         characteristics: ['Low in Withdrawal'],
         arrowDirection: ['Down'],
-        backgroundColor: '#00B788'
+        backgroundColor: '#00B788',
+        link: 'https://insightsintervention.com/meet-the-kids/social-and-eager-to-try/'
     },
 ];
 
