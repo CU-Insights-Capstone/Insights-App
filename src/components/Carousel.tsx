@@ -23,18 +23,21 @@ interface CarouselProps {
 
 const leftArrow = require('../assets/keyboard_arrow_left-24px.svg');
 const rightArrow = require('../assets/keyboard_arrow_right-24px.svg');
+const leftArrowDisabled = require('../assets/keyboard_arrow_left-24px_disabled.svg');
+const rightArrowDisabled = require('../assets/keyboard_arrow_right-24px_disabled.svg');
 const upArrow = require('../assets/arrow-up-circle.svg');
 const downArrow = require('../assets/arrow-down-circle.svg');
 
 const Carousel = ({pages, isSimple}: CarouselProps) => {
     const [pageNumber, setPageNumber] = useState(0);
-
+    const isLeftArrowDisabled = pageNumber <= 0;
+    const isRightArrowDisabled = pageNumber >= pages.length - 1;
     const rightClickHandler = () => {
-        if (pageNumber != 3) setPageNumber(pageNumber + 1);
+        if (!isRightArrowDisabled) setPageNumber(pageNumber + 1);
     }
 
     const leftClickHandler = () => {
-        if (pageNumber != 0) setPageNumber(pageNumber - 1);
+        if (!isLeftArrowDisabled) setPageNumber(pageNumber - 1);
     }
 
     const image1 = pages[pageNumber].images[0];
@@ -67,7 +70,7 @@ const Carousel = ({pages, isSimple}: CarouselProps) => {
 
                 {pages[pageNumber].characteristics.map((characteristic, index) =>
                     <>
-                        <View style={styles.alignRow}>
+                        <View style={styles.alignRow} key={index}>
                             <AppImage source={pages[pageNumber].arrowDirection[index] == 'Up' ? upArrow : downArrow} style={styles.characteristicArrow}/>
                             <TextNeutraBold color={'white'} style={[styles.characteristicsText]}>{characteristic}{'\n'}</TextNeutraBold>
                         </View>
@@ -81,8 +84,14 @@ const Carousel = ({pages, isSimple}: CarouselProps) => {
                 </View>
             </View>
             <View style={globalStyles.horizontalAlign}>
-                <AppImage source={leftArrow} style={styles.pageArrow} onClick={leftClickHandler}/>
-                <AppImage source={rightArrow} style={styles.pageArrow} onClick={rightClickHandler}/>
+                <AppImage 
+                    source={isLeftArrowDisabled ? leftArrowDisabled : leftArrow}
+                    style={styles.pageArrow}
+                    onClick={leftClickHandler}/>
+                <AppImage 
+                    source={isRightArrowDisabled ? rightArrowDisabled : rightArrow}
+                    style={styles.pageArrow}
+                    onClick={rightClickHandler}/>
             </View>
         </>
     );

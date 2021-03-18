@@ -1,9 +1,9 @@
 import React from 'react';
 import {StyleSheet, Text, View, SafeAreaView, Image, ImageBackground} from 'react-native';
-import globalStyles from "../../../../styles/global";
 import Carousel from "../../../components/Carousel";
 import AppPage from '../../common/AppPage';
 import { CarouselPage } from "../../../components/Carousel";
+import TextNeutraBold from '../../../components/texts/TextNeutraBold';
 
 const pages: CarouselPage[] = [
     {
@@ -50,15 +50,11 @@ const pages: CarouselPage[] = [
 
 const MeetTheKids = ({ route }) => {
     const { simple } = route.params;
-    const contents = simple == 'true' ? 'Put Simplified Carousel here..' : <Carousel pages={pages} isSimple={false}/>
+    const contents = simple == 'true' 
+        ? <TextNeutraBold>'Put Simplified Carousel here..' </TextNeutraBold> 
+        : <Carousel pages={pages} isSimple={false}/>;
 
-    const pageContent = (
-        <>
-            {contents}
-        </>
-    );
-
-    return <AppPage display={pageContent} title='Meet the Kids' />
+    return <AppPage display={contents} title='Meet the Kids' />
 }
 
 const styles = StyleSheet.create({
