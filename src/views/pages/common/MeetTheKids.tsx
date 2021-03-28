@@ -48,7 +48,7 @@ const pages: CarouselPage[] = [
     },
 ];
 
-const MeetTheKids = ({ route }) => {
+const MeetTheKids = ({ route }: any) => {
     const { simple } = route.params;
     const contents = simple == 'true' 
         ? <TextNeutraBold>'Put Simplified Carousel here..' </TextNeutraBold> 

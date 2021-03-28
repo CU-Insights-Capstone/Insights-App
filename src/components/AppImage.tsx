@@ -7,14 +7,14 @@ interface AppImageProps {
     onClick?: () => void;
 }
 
-const AppImage = ({source, style = defaultStyle, onClick }: AppImageProps): JSX.Element => {
+const AppImage = ({source, style = defaultStyle, onClick}: AppImageProps): JSX.Element => {
     const image = <Image
         resizeMode='contain'
         source={source}
         style={style}
     />
     if (onClick)
-        return  <TouchableOpacity onPress={onClick} style={defaultStyle}>{image}</TouchableOpacity>
+        return <TouchableOpacity onPress={onClick} style={defaultStyle}>{image}</TouchableOpacity>
     else
         return image;
 }

@@ -78,7 +78,7 @@ const Carousel = ({pages, isSimple}: CarouselProps) => {
                 )}
                 <View style={styles.linkPosition}>
                     <TextNeutraBold style={[styles.link, styles.textDropShadow, globalStyles.alignCenter]}
-                          onPress={() => Linking.openURL(pages[pageNumber].link)}>
+                          onClick={() => Linking.openURL(pages[pageNumber].link)}>
                         Learn More!
                     </TextNeutraBold>
                 </View>
