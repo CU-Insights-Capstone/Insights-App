@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, {useState} from 'react';
 import {Linking, StyleSheet, TouchableWithoutFeedback, View} from 'react-native';
 import TextNeutraBold from './texts/TextNeutraBold';
 import TextDescription from './texts/TextDescription';
@@ -7,6 +7,7 @@ import globalStyles from "../../styles/global";
 
 export interface CarouselPage {
     description: string,
+    simpleDescription: string,
     personalityType: string,
     images: [string, string],
     names: [string, string],
@@ -43,7 +44,7 @@ const Carousel = ({pages, isSimple}: CarouselProps) => {
     const image1 = pages[pageNumber].images[0];
     const image2 = pages[pageNumber].images[1];
 
-    return (
+    const parentTeacherView =
         <>
             <View style={[styles.card, {backgroundColor: pages[pageNumber].backgroundColor}, globalStyles.dropShadow]}>
                 <TextNeutraBold color={'white'} style={[styles.personalityTypeTitle, globalStyles.alignCenter]}>
@@ -71,29 +72,80 @@ const Carousel = ({pages, isSimple}: CarouselProps) => {
                 {pages[pageNumber].characteristics.map((characteristic, index) =>
                     <>
                         <View style={styles.alignRow} key={index}>
-                            <AppImage source={pages[pageNumber].arrowDirection[index] == 'Up' ? upArrow : downArrow} style={styles.characteristicArrow}/>
-                            <TextNeutraBold color={'white'} style={[styles.characteristicsText]}>{characteristic}{'\n'}</TextNeutraBold>
+                            <AppImage source={pages[pageNumber].arrowDirection[index] == 'Up' ? upArrow : downArrow}
+                                      style={styles.characteristicArrow}/>
+                            <TextNeutraBold color={'white'}
+                                            style={[styles.characteristicsText]}>{characteristic}{'\n'}</TextNeutraBold>
                         </View>
                     </>
                 )}
                 <View style={styles.linkPosition}>
                     <TextNeutraBold style={[styles.link, styles.textDropShadow, globalStyles.alignCenter]}
-                          onClick={() => Linking.openURL(pages[pageNumber].link)}>
+                                    onClick={() => Linking.openURL(pages[pageNumber].link)}>
                         Learn More!
                     </TextNeutraBold>
                 </View>
             </View>
             <View style={globalStyles.horizontalAlign}>
-                <AppImage 
+                <AppImage
                     source={isLeftArrowDisabled ? leftArrowDisabled : leftArrow}
                     style={styles.pageArrow}
                     onClick={leftClickHandler}/>
-                <AppImage 
+                <AppImage
                     source={isRightArrowDisabled ? rightArrowDisabled : rightArrow}
                     style={styles.pageArrow}
                     onClick={rightClickHandler}/>
             </View>
         </>
+
+    const kidView =
+        <>
+            <View style={[styles.card, {backgroundColor: pages[pageNumber].backgroundColor}, globalStyles.dropShadow]}>
+                <TextNeutraBold color={'white'} style={[styles.personalityTypeTitle, globalStyles.alignCenter]}>
+                    {pages[pageNumber].personalityType.toUpperCase()}
+                </TextNeutraBold>
+
+                <TextDescription style={[globalStyles.alignCenter, styles.description]}>
+                    {pages[pageNumber].simpleDescription}
+                </TextDescription>
+
+                <View style={globalStyles.horizontalAlign}>
+                    <AppImage source={image1} style={[styles.image, {marginRight: 10}]}></AppImage>
+                    <AppImage source={image2} style={[styles.image, {marginLeft: 10}]}></AppImage>
+                </View>
+
+                <View style={globalStyles.horizontalAlign}>
+                    <TextNeutraBold color={'white'} style={[styles.name, globalStyles.alignCenter, {marginRight: 10}]}>
+                        {pages[pageNumber].names[0].toUpperCase()}
+                    </TextNeutraBold>
+                    <TextNeutraBold color={'white'} style={[styles.name, globalStyles.alignCenter, {marginLeft: 10}]}>
+                        {pages[pageNumber].names[1].toUpperCase()}
+                    </TextNeutraBold>
+                </View>
+
+                <View style={styles.linkPosition}>
+                    <TextNeutraBold style={[styles.link, styles.textDropShadow, globalStyles.alignCenter]}
+                                    onClick={() => Linking.openURL(pages[pageNumber].link)}>
+                        Learn More!
+                    </TextNeutraBold>
+                </View>
+            </View>
+            <View style={globalStyles.horizontalAlign}>
+                <AppImage
+                    source={isLeftArrowDisabled ? leftArrowDisabled : leftArrow}
+                    style={styles.pageArrow}
+                    onClick={leftClickHandler}/>
+                <AppImage
+                    source={isRightArrowDisabled ? rightArrowDisabled : rightArrow}
+                    style={styles.pageArrow}
+                    onClick={rightClickHandler}/>
+            </View>
+        </>
+
+    return (
+        isSimple == true
+            ? kidView
+            : parentTeacherView
     );
 }
 
@@ -127,7 +179,8 @@ const styles = StyleSheet.create({
     },
     description: {
         fontSize: 16,
-        marginTop: 15
+        marginTop: 15,
+        fontWeight: 'bold'
     },
     image: {
         width: 125,
@@ -135,7 +188,8 @@ const styles = StyleSheet.create({
         borderRadius: 125 / 2,
         borderWidth: 10,
         borderColor: '#fff',
-        backgroundColor: '#fff'
+        backgroundColor: '#fff',
+        marginTop: 10
     },
     link: {
         color: '#28CBD3',
