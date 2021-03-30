@@ -1,6 +1,9 @@
 import { StyleSheet } from 'react-native';
 
 const globalStyles = StyleSheet.create({
+    alignCenter: {
+        textAlign: 'center'
+    },
     backgroundImage: {
         flex: 1,
         resizeMode: "cover",
@@ -11,8 +14,14 @@ const globalStyles = StyleSheet.create({
         alignItems: 'center',
         justifyContent: 'center'
     },
+    dropShadow: {
+        shadowColor: '#000',
+        shadowOffset: { width: 3, height: 4 },
+        shadowOpacity: 0.3,
+        shadowRadius: 5,
+        elevation: 5
+    },
     horizontalAlign: {
-        flex: 1,
         flexDirection: 'row',
         justifyContent: 'center'
     },
@@ -20,13 +29,12 @@ const globalStyles = StyleSheet.create({
         color: 'white'
     },
     textDropShadow: {
-        textShadowColor: "#696969",
+        textShadowColor: 'rgba(0, 0, 0, 0.5)',
         textShadowOffset: {
             width: 3,
             height: 3,
         },
         textShadowRadius: 4.65,
-
         elevation: 6,
     },
 });

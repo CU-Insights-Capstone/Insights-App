@@ -8,6 +8,7 @@ const bg = require('../../assets/background.png');
 interface AppPageProps {
     display: JSX.Element;
     title?: string;
+    style?: React.CSSProperties,
 }
 
 const AppPage = (props: AppPageProps): JSX.Element => {

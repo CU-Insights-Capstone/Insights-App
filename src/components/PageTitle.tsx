@@ -11,7 +11,7 @@ const PageTitle = ({title}: PageTitleProps) => {
 
     return (
         <View>
-            <TextPageHeader>{title}</TextPageHeader>
+            <TextPageHeader color={'white'}>{title}</TextPageHeader>
             <View style={globalStyles.horizontalAlign}>
                 <View style={styles.rectangle} />
             </View>
@@ -21,10 +21,11 @@ const PageTitle = ({title}: PageTitleProps) => {
 
 const styles = StyleSheet.create({
     rectangle: {
-        width: 300,
+        width: '90%',
         height: 5,
         backgroundColor: 'white',
-        borderRadius: 40
+        borderRadius: 40,
+        marginBottom: '3%'
     },
 });
 
