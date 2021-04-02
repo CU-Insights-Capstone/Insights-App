@@ -122,13 +122,14 @@ const Carousel = ({pages, isSimple}: CarouselProps) => {
                         {pages[pageNumber].names[1].toUpperCase()}
                     </TextNeutraBold>
                 </View>
-
-                <View style={styles.linkPosition}>
+                
+                {/* Not sure if we need the website link for the kids view*/}
+                {/* <View style={styles.linkPosition}>
                     <TextNeutraBold style={[styles.link, styles.textDropShadow, globalStyles.alignCenter]}
                                     onClick={() => Linking.openURL(pages[pageNumber].link)}>
                         Learn More!
                     </TextNeutraBold>
-                </View>
+                </View> */}
             </View>
             <View style={globalStyles.horizontalAlign}>
                 <AppImage
