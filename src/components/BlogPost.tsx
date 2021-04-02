@@ -6,6 +6,7 @@ import { BlogPostResponse } from '../views/pages/common/Blog';
 import AppImage from './AppImage';
 import TextDescription from './texts/TextDescription';
 import TextNeutraBold from './texts/TextNeutraBold';
+import Moment from 'react-moment';
 
 interface BlogPostProps {
     blogPost: BlogPostResponse;
@@ -13,8 +14,6 @@ interface BlogPostProps {
 
 const BlogPost = (props: BlogPostProps) => {
     const contentWidth = useWindowDimensions().width;
-    var moment = require('moment');
-    var date = moment(props.blogPost.date).format('MMMM DD, YYYY')
 
     return (
     <>
@@ -24,7 +23,7 @@ const BlogPost = (props: BlogPostProps) => {
                     {props.blogPost.title.rendered}
                 </TextNeutraBold>
                 <TextNeutraBold color='gray'>
-                    {date}
+                    <Moment format='MMMM DD, YYYY'>{props.blogPost.date}</Moment>
                 </TextNeutraBold>
                 <img src={props.blogPost.jetpack_featured_media_url} width={'100%'}></img>
                 <TextDescription>

@@ -29,7 +29,7 @@ const globalStyles = StyleSheet.create({
         color: 'white'
     },
     textDropShadow: {
-        textShadowColor: 'rgba(0, 0, 0, 0.5)',
+        textShadowColor: 'rgba(0, 0, 0, 0.3)',
         textShadowOffset: {
             width: 3,
             height: 3,
