@@ -1,8 +1,11 @@
 import React from 'react';
-import { Text, View } from 'react-native';
+import { Text, View, ActivityIndicator, StyleSheet } from 'react-native';
 import { useQuery, QueryClient, QueryClientProvider } from 'react-query';
 import BlogPost from '../../../components/BlogPost';
 import AppPage from '../../common/AppPage';
+import TextNeutraBold from '../../../components/texts/TextNeutraBold'
+import globalStyles from '../../../../styles/global';
+import TextPageHeader from '../../../components/texts/TextPageHeader';
 
 const queryClient = new QueryClient();
 
@@ -28,19 +31,23 @@ const BlogInner = () => {
 
   if(isLoading) {
     const pageContent = (
-      <View>
-        <Text>
+      <View style={globalStyles.container}>
+        <TextNeutraBold color={'white'} style={styles.text}>
           Loading...
-        </Text>
+        </TextNeutraBold>
+        <ActivityIndicator size='large' color='#ffffff'></ActivityIndicator>
       </View>
     );
     return <AppPage display={pageContent} title='Blog' />;
   } else if (isError) {
     const pageContent = (
-      <View>
-        <Text>
-          Failed to fetch blog content. Please try again later.
-        </Text>
+      <View style={globalStyles.container}>
+        <TextNeutraBold color={'red'} style={styles.text}>
+          Error
+        </TextNeutraBold>
+        <TextNeutraBold color={'white'} style={styles.text}>
+          Failed to get blog posts. Please try again later.
+        </TextNeutraBold>
       </View>
     );
     return <AppPage display={pageContent} title='Blog' />;
@@ -71,3 +78,10 @@ interface BlogPostContent {
 }
 
 export default Blog;
+
+const styles = StyleSheet.create({
+  text: {
+      fontSize: 20,
+      paddingBottom: 5,
+  },
+});

@@ -21,8 +21,7 @@ const ForParents = (): JSX.Element => {
       <InsightsButton
         color={'#28CBD3'}
         title={'Temperament Profile Survey'}
-        // TODO: change this to the link that is actually is, not google.
-        onClick={() => Linking.openURL('https://www.google.com')} />
+        onClick={() => Linking.openURL('https://nyu.qualtrics.com/jfe/form/SV_6gQ2VuqyJdazcy1')} />
     </>
   );
   return <AppPage display={pageContent} title='Parents'/>

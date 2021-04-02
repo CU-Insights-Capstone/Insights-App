@@ -18,8 +18,7 @@ const ForTeachers = (): JSX.Element => {
       <InsightsButton
         color={'#AD056C'}
         title={'Temperament Profile Survey'}
-        // TODO: change this to the link that is actually is, not google.
-        onClick={() => Linking.openURL('https://www.google.com')} />
+        onClick={() => Linking.openURL('https://nyu.qualtrics.com/jfe/form/SV_0OeWZmXu6YYTEbz')} />
     </View>
   );
 
