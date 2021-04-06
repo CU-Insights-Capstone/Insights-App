@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:anchor="https://anchor.fm/xmlns">
+	<channel>
+		<title><![CDATA[INSIGHTS the Podcast]]></title>
+		<description><![CDATA[INSIGHTS the Podcast is brought to you by Dr. Sandee McClowry, Ph.D., RN, FAAN, and Professor Emerita at New York University. Dr. McClowry is the developer of INSIGHTS into Children's Temperament, a social-emotional learning program for children, teachers, and parents. INSIGHTS the Podcast will feature valuable conversations with mental health professionals, teachers, researchers, and parents.]]></description>
+		<link>insightsintervention.com</link>
+		<image>
+			<url>https://d3t3ozftmdmh3i.cloudfront.net/production/podcast_uploaded_nologo/10619333/10619333-1605304144963-246c0a891023f.jpg</url>
+			<title>INSIGHTS the Podcast</title>
+			<link>insightsintervention.com</link>
+		</image>
+		<generator>Anchor Podcasts</generator>
+		<lastBuildDate>Mon, 05 Apr 2021 17:59:47 GMT</lastBuildDate>
+		<atom:link href="https://anchor.fm/s/3fe46774/podcast/rss" rel="self" type="application/rss+xml"/>
+		<author><![CDATA[INSIGHTS the Podcast]]></author>
+		<copyright><![CDATA[INSIGHTS the Podcast]]></copyright>
+		<language><![CDATA[en]]></language>
+		<atom:link rel="hub" href="https://pubsubhubbub.appspot.com/"/>
+		<itunes:author>INSIGHTS the Podcast</itunes:author>
+		<itunes:summary>INSIGHTS the Podcast is brought to you by Dr. Sandee McClowry, Ph.D., RN, FAAN, and Professor Emerita at New York University. Dr. McClowry is the developer of INSIGHTS into Children&apos;s Temperament, a social-emotional learning program for children, teachers, and parents. INSIGHTS the Podcast will feature valuable conversations with mental health professionals, teachers, researchers, and parents.</itunes:summary>
+		<itunes:type>episodic</itunes:type>
+		<itunes:owner>
+			<itunes:name>INSIGHTS the Podcast</itunes:name>
+			<itunes:email>podcasts60+3fe46774@anchor.fm</itunes:email>
+		</itunes:owner>
+		<itunes:explicit>No</itunes:explicit>
+		<itunes:category text="Health &amp; Fitness">
+			<itunes:category text="Mental Health"/>
+		</itunes:category>
+		<itunes:image href="https://d3t3ozftmdmh3i.cloudfront.net/production/podcast_uploaded_nologo/10619333/10619333-1605304144963-246c0a891023f.jpg"/>
+		<item>
+			<title><![CDATA[S1;E5: INSIGHTS Behind the Research]]></title>
+			<description><![CDATA[<p><strong>In this episode, Dr. Sandee McClowry speaks to Dr. Erin O'Connor and Dr. Megan McCormick about the beginnings of INSIGHTS and the research that made it all happen.&nbsp;</strong></p>
+<p>Resources&nbsp;</p>
+<p><a href="https://www.scientificmommy.com/" target="_blank">Scientific Mommy</a></p>
+<p><a href="https://insightsintervention.com/articles/" target="_blank">INSIGHTS Research Articles</a></p>
+<p>-------</p>
+<p><a href="https://insightsintervention.com/" target="_blank">INSIGHTS Website</a></p>
+<p><a href="https://steinhardt.nyu.edu/people/sandee-mcclowry" target="_blank">Dr. McClowry’s Bio</a></p>
+<p><a href="https://insightsintervention.com/insights-media/your-childs-unique-temperament-insights-and-strategies-for-responsive-parenting/" target="_blank">Book for Parents</a></p>
+<p><a href="https://insightsintervention.com/project-category/books-for-schools/" target="_blank">Books for Educators</a></p>
+<p><a href="https://nyu.qualtrics.com/jfe/form/SV_6gQ2VuqyJdazcy1" target="_blank">Temperament Profile Survey</a></p>
+<p><br></p>
+<p><strong>(please excuse poor audio due to bad connection)</strong></p>
+<p><br></p>
+<p><strong>Music: Love you - Free Design</strong></p>
+]]></description>
+			<link>https://anchor.fm/insightspodcast/episodes/S1E5-INSIGHTS-Behind-the-Research-enrgdr</link>
+			<guid isPermaLink="false">de6e63c8-c051-4ee4-84c9-354e997fb9b6</guid>
+			<dc:creator><![CDATA[INSIGHTS the Podcast]]></dc:creator>
+			<pubDate>Tue, 15 Dec 2020 17:14:10 GMT</pubDate>
+			<enclosure url="https://anchor.fm/s/3fe46774/podcast/play/24018811/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2020-11-15%2Fb1127c2c-d9b6-26a0-8801-1a4cbe8e4003.mp3" length="18406663" type="audio/mpeg"/>
+			<itunes:summary>&lt;p&gt;&lt;strong&gt;In this episode, Dr. Sandee McClowry speaks to Dr. Erin O&apos;Connor and Dr. Megan McCormick about the beginnings of INSIGHTS and the research that made it all happen.&amp;nbsp;&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Resources&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.scientificmommy.com/&quot; target=&quot;_blank&quot;&gt;Scientific Mommy&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://insightsintervention.com/articles/&quot; target=&quot;_blank&quot;&gt;INSIGHTS Research Articles&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;-------&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://insightsintervention.com/&quot; target=&quot;_blank&quot;&gt;INSIGHTS Website&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://steinhardt.nyu.edu/people/sandee-mcclowry&quot; target=&quot;_blank&quot;&gt;Dr. McClowry’s Bio&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://insightsintervention.com/insights-media/your-childs-unique-temperament-insights-and-strategies-for-responsive-parenting/&quot; target=&quot;_blank&quot;&gt;Book for Parents&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://insightsintervention.com/project-category/books-for-schools/&quot; target=&quot;_blank&quot;&gt;Books for Educators&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://nyu.qualtrics.com/jfe/form/SV_6gQ2VuqyJdazcy1&quot; target=&quot;_blank&quot;&gt;Temperament Profile Survey&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;br&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;(please excuse poor audio due to bad connection)&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;br&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Music: Love you - Free Design&lt;/strong&gt;&lt;/p&gt;
+</itunes:summary>
+			<itunes:explicit>No</itunes:explicit>
+			<itunes:duration>1149</itunes:duration>
+			<itunes:image href="https://d3t3ozftmdmh3i.cloudfront.net/production/podcast_uploaded_nologo/10619333/10619333-1605304144963-246c0a891023f.jpg"/>
+			<itunes:season>1</itunes:season>
+			<itunes:episode>5</itunes:episode>
+			<itunes:episodeType>full</itunes:episodeType>
+		</item>
+		<item>
+			<title><![CDATA[S1;E4: Teaching INSIGHTS: Nebraska PT II]]></title>
+			<description><![CDATA[<p>Listen here to our interview with Dr.&nbsp;Joan&nbsp;Carraher, a continuation of our INSIGHTS program for teachers in Nebraska.&nbsp;</p>
+<p><br></p>
+<p>Resources:</p>
+<p><a href="http://cyfs.unl.edu/projects/insights/" target="_blank">INSIGHTS in Nebraska</a></p>
+<p><a href="https://www.thoughtco.com/maslows-hierarchy-of-needs-4582571" target="_blank">Maslow's Hierarchy of Needs</a></p>
+<p>-------</p>
+<p><a href="https://insightsintervention.com/" target="_blank">INSIGHTS Website</a></p>
+<p><a href="https://steinhardt.nyu.edu/people/sandee-mcclowry" target="_blank">Dr. McClowry’s Bio</a></p>
+<p><a href="https://insightsintervention.com/insights-media/your-childs-unique-temperament-insights-and-strategies-for-responsive-parenting/" target="_blank">Book for Parents</a></p>
+<p><a href="https://insightsintervention.com/project-category/books-for-schools/" target="_blank">Books for Educators</a></p>
+<p><a href="https://nyu.qualtrics.com/jfe/form/SV_6gQ2VuqyJdazcy1" target="_blank">Temperament Profile Survey</a></p>
+<p><br></p>
+<p>Music: Love You - Free Design&nbsp;</p>
+]]></description>
+			<link>https://anchor.fm/insightspodcast/episodes/S1E4-Teaching-INSIGHTS-Nebraska-PT-II-enhnfb</link>
+			<guid isPermaLink="false">f0c248fa-43c6-47bb-85e7-476b60b21bb7</guid>
+			<dc:creator><![CDATA[INSIGHTS the Podcast]]></dc:creator>
+			<pubDate>Tue, 08 Dec 2020 19:24:56 GMT</pubDate>
+			<enclosure url="https://anchor.fm/s/3fe46774/podcast/play/23698347/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2020-11-8%2F136079399-44100-2-15d59fc4af68.m4a" length="20198559" type="audio/x-m4a"/>
+			<itunes:summary>&lt;p&gt;Listen here to our interview with Dr.&amp;nbsp;Joan&amp;nbsp;Carraher, a continuation of our INSIGHTS program for teachers in Nebraska.&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;&lt;br&gt;&lt;/p&gt;
+&lt;p&gt;Resources:&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://cyfs.unl.edu/projects/insights/&quot; target=&quot;_blank&quot;&gt;INSIGHTS in Nebraska&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.thoughtco.com/maslows-hierarchy-of-needs-4582571&quot; target=&quot;_blank&quot;&gt;Maslow&apos;s Hierarchy of Needs&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;-------&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://insightsintervention.com/&quot; target=&quot;_blank&quot;&gt;INSIGHTS Website&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://steinhardt.nyu.edu/people/sandee-mcclowry&quot; target=&quot;_blank&quot;&gt;Dr. McClowry’s Bio&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://insightsintervention.com/insights-media/your-childs-unique-temperament-insights-and-strategies-for-responsive-parenting/&quot; target=&quot;_blank&quot;&gt;Book for Parents&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://insightsintervention.com/project-category/books-for-schools/&quot; target=&quot;_blank&quot;&gt;Books for Educators&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://nyu.qualtrics.com/jfe/form/SV_6gQ2VuqyJdazcy1&quot; target=&quot;_blank&quot;&gt;Temperament Profile Survey&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;br&gt;&lt;/p&gt;
+&lt;p&gt;Music: Love You - Free Design&amp;nbsp;&lt;/p&gt;
+</itunes:summary>
+			<itunes:explicit>No</itunes:explicit>
+			<itunes:duration>1248</itunes:duration>
+			<itunes:image href="https://d3t3ozftmdmh3i.cloudfront.net/production/podcast_uploaded_nologo/10619333/10619333-1605304144963-246c0a891023f.jpg"/>
+			<itunes:season>1</itunes:season>
+			<itunes:episode>4</itunes:episode>
+			<itunes:episodeType>full</itunes:episodeType>
+		</item>
+		<item>
+			<title><![CDATA[S1E3: Teaching INSIGHTS: Nebraska]]></title>
+			<description><![CDATA[<p>Welcome to the thrid episode of INISGHTS where you will hear from Dr. McClowry (of course) and Angie talk about INSIGHTS teaching in Nebraska with a SPECIAL GUEST at the end, Rene, speaking with Bussiness Manager, Heather, about Hanukkah and Jewish Traditions!</p>
+<p><strong>Resources</strong>&nbsp;</p>
+<p><a href="http://cyfs.unl.edu/projects/insights/" target="_blank">INSIGHTS in Nebraska</a></p>
+<p><a href="https://insightsintervention.com/what-is-insights/#results" target="_blank">INSIGHTS Improves Reading Skills</a></p>
+<p>--</p>
+<p><a href="https://www.parents.com/holiday/hanukkah/crafts/festive-and-fun-hanukkah-crafts-and-recipes/" target="_blank">Hanukkah&nbsp;crafts</a></p>
+<p>Rene's&nbsp;recommendations:</p>
+<p><a href="https://www.marthastewart.com/331738/potato-latkes" target="_blank">Hanukkah Recipe: Potato Latkes (Rene doesn't use the beer)</a></p>
+<p><a href="https://www.myjewishlearning.com/recipe/sufganiyot/" target="_blank">Hanukkah Recipe: Sufganuiot&nbsp;(Doughnuts)</a></p>
+<p><a href="https://pjlibrary.org/home" target="_blank">PJ Library: Books &amp; Activities for Jewish Families</a></p>
+<p><a href="https://www.myjewishlearning.com/category/celebrate/" target="_blank">My Jewish Learning: Holiday&nbsp;Resource&nbsp;for Jewish Families</a></p>
+<p>-------</p>
+<p><a href="https://insightsintervention.com/" target="_blank">INSIGHTS Website</a> ⬅️</p>
+<p><a href="https://steinhardt.nyu.edu/people/sandee-mcclowry" target="_blank">Dr. McClowry’s Bio</a> 👩🏼‍⚕️</p>
+<p><a href="https://insightsintervention.com/insights-media/your-childs-unique-temperament-insights-and-strategies-for-responsive-parenting/" target="_blank">Book for Parents</a> 📚</p>
+<p><a href="https://insightsintervention.com/project-category/books-for-schools/" target="_blank">Books for Educators</a> 📚</p>
+<p><a href="https://nyu.qualtrics.com/jfe/form/SV_6gQ2VuqyJdazcy1" target="_blank">Identify Your Child's Temperament</a> 👏🏼</p>
+<p>___</p>
+<p><strong>Music</strong>: Love You - Free Design</p>
+]]></description>
+			<link>https://anchor.fm/insightspodcast/episodes/S1E3-Teaching-INSIGHTS-Nebraska-en7f6k</link>
+			<guid isPermaLink="false">e1aaccb7-62d6-4059-9540-5cf2632b808c</guid>
+			<dc:creator><![CDATA[INSIGHTS the Podcast]]></dc:creator>
+			<pubDate>Tue, 01 Dec 2020 21:55:02 GMT</pubDate>
+			<enclosure url="https://anchor.fm/s/3fe46774/podcast/play/23362196/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2020-11-1%2F36366cc6-07e1-be4a-25ea-0e9fafd79cf9.mp3" length="29393838" type="audio/mpeg"/>
+			<itunes:summary>&lt;p&gt;Welcome to the thrid episode of INISGHTS where you will hear from Dr. McClowry (of course) and Angie talk about INSIGHTS teaching in Nebraska with a SPECIAL GUEST at the end, Rene, speaking with Bussiness Manager, Heather, about Hanukkah and Jewish Traditions!&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Resources&lt;/strong&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://cyfs.unl.edu/projects/insights/&quot; target=&quot;_blank&quot;&gt;INSIGHTS in Nebraska&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://insightsintervention.com/what-is-insights/#results&quot; target=&quot;_blank&quot;&gt;INSIGHTS Improves Reading Skills&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;--&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.parents.com/holiday/hanukkah/crafts/festive-and-fun-hanukkah-crafts-and-recipes/&quot; target=&quot;_blank&quot;&gt;Hanukkah&amp;nbsp;crafts&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Rene&apos;s&amp;nbsp;recommendations:&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.marthastewart.com/331738/potato-latkes&quot; target=&quot;_blank&quot;&gt;Hanukkah Recipe: Potato Latkes (Rene doesn&apos;t use the beer)&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.myjewishlearning.com/recipe/sufganiyot/&quot; target=&quot;_blank&quot;&gt;Hanukkah Recipe: Sufganuiot&amp;nbsp;(Doughnuts)&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://pjlibrary.org/home&quot; target=&quot;_blank&quot;&gt;PJ Library: Books &amp;amp; Activities for Jewish Families&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.myjewishlearning.com/category/celebrate/&quot; target=&quot;_blank&quot;&gt;My Jewish Learning: Holiday&amp;nbsp;Resource&amp;nbsp;for Jewish Families&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;-------&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://insightsintervention.com/&quot; target=&quot;_blank&quot;&gt;INSIGHTS Website&lt;/a&gt; ⬅️&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://steinhardt.nyu.edu/people/sandee-mcclowry&quot; target=&quot;_blank&quot;&gt;Dr. McClowry’s Bio&lt;/a&gt; 👩🏼‍⚕️&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://insightsintervention.com/insights-media/your-childs-unique-temperament-insights-and-strategies-for-responsive-parenting/&quot; target=&quot;_blank&quot;&gt;Book for Parents&lt;/a&gt; 📚&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://insightsintervention.com/project-category/books-for-schools/&quot; target=&quot;_blank&quot;&gt;Books for Educators&lt;/a&gt; 📚&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://nyu.qualtrics.com/jfe/form/SV_6gQ2VuqyJdazcy1&quot; target=&quot;_blank&quot;&gt;Identify Your Child&apos;s Temperament&lt;/a&gt; 👏🏼&lt;/p&gt;
+&lt;p&gt;___&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Music&lt;/strong&gt;: Love You - Free Design&lt;/p&gt;
+</itunes:summary>
+			<itunes:explicit>No</itunes:explicit>
+			<itunes:duration>1796</itunes:duration>
+			<itunes:image href="https://d3t3ozftmdmh3i.cloudfront.net/production/podcast_uploaded_nologo/10619333/10619333-1605304144963-246c0a891023f.jpg"/>
+			<itunes:season>1</itunes:season>
+			<itunes:episode>3</itunes:episode>
+			<itunes:episodeType>full</itunes:episodeType>
+		</item>
+		<item>
+			<title><![CDATA[S1E2: INSIGHTS into the Holidays ]]></title>
+			<description><![CDATA[<p>In this episode hear Dr. McClowry, creator of INSIGHTS discusses COVID-19 measures for children during the holidays with Business Manager Heather Nunes and Graphic Designer and Social Media Manager, Amour Castillo. SPECIAL GUEST: Jessie speaks with Amour about Christmas and Thanksgiving 🍁</p>
+<p><strong>Episode Resources:&nbsp;</strong></p>
+<p><a href="https://insightsintervention.com/" target="_blank">INSIGHTS Website</a></p>
+<p><a href="https://steinhardt.nyu.edu/people/sandee-mcclowry" target="_blank">Dr. McClowry’s Bio</a></p>
+<p><a href="https://insightsintervention.com/product/middle-school-virtual-support-group-11-19-12-3-12-10-12-17/" target="_blank">Middle School Virtual Support Group</a></p>
+<p><a href="https://insightsintervention.com/insights-media/your-childs-unique-temperament-insights-and-strategies-for-responsive-parenting/" target="_blank">Book for Parents</a></p>
+<p><a href="https://insightsintervention.com/project-category/books-for-schools/" target="_blank">Books for Educators</a></p>
+<p>----------</p>
+<p><a href="https://www.parents.com/holiday/thanksgiving/crafts/" target="_blank">Thanksgiving crafts</a></p>
+<p><a href="https://www.foodnetwork.com/recipes/patrick-and-gina-neely/apple-crisp-recipe-1953209" target="_blank">Thanksgiving Recipe: Apple Crisp</a></p>
+<p>--------</p>
+<p><a href="https://www.parents.com/holiday/hanukkah/crafts/festive-and-fun-hanukkah-crafts-and-recipes/" target="_blank">Hanukkah&nbsp;crafts</a></p>
+<p>Rene's recommendations (listen to her in the bonus episode coming up!):</p>
+<p><a href="https://www.marthastewart.com/331738/potato-latkes" target="_blank">Hanukkah Recipe: Potato Latkes (Rene doesn't use the beer)</a></p>
+<p><a href="https://www.myjewishlearning.com/recipe/sufganiyot/" target="_blank">Hanukkah Recipe: Sufganuiot&nbsp;(Doughnuts)</a></p>
+<p><a href="https://pjlibrary.org/home" target="_blank">PJ Library: Books &amp; Activities for Jewish Families</a></p>
+<p><a href="https://www.myjewishlearning.com/category/celebrate/" target="_blank">My Jewish Learning: Holiday Resource for Jewish Families</a></p>
+<p>--------</p>
+<p><a href="https://www.marthastewart.com/275049/affordable-christmas-crafts" target="_blank">Christmas crafts</a></p>
+<p><a href="https://www.foodnetwork.com/recipes/alton-brown/sugar-cookies-recipe-1914697" target="_blank">Christmas Recipe: Sugar Cookies</a></p>
+<p>--------</p>
+<p><a href="https://www.dltk-kids.com/crafts/kwanzaa/" target="_blank">Kwanzaa crafts</a></p>
+<p><a href="https://www.foodnetwork.com/recipes/calleys-sweet-potato-pie-recipe-2085595" target="_blank">Kwanzaa Recipe: Sweet Potato Pie</a></p>
+<p>--------</p>
+<p><a href="https://www.parents.com/holiday/new-years/crafts/ring-in-the-new-year/?slide=slide_e3c82d49-af8f-4b42-9c8e-c6d675e859e2#slide_e3c82d49-af8f-4b42-9c8e-c6d675e859e2" target="_blank">New Year's crafts</a></p>
+<p><a href="https://niftymom.com/2015/12/kid-friendly-years-eve-treat-clock-marshmallow-pops/" target="_blank">New Year's Recipe:&nbsp;Clock Marshmallow Pops</a></p>
+<p>--------</p>
+<p>Love you Free Design (Music)</p>
+]]></description>
+			<link>https://anchor.fm/insightspodcast/episodes/S1E2-INSIGHTS-into-the-Holidays-emukb9</link>
+			<guid isPermaLink="false">3e00b1e2-05e5-4a04-9aca-07186bff5ab0</guid>
+			<dc:creator><![CDATA[INSIGHTS the Podcast]]></dc:creator>
+			<pubDate>Tue, 24 Nov 2020 20:48:23 GMT</pubDate>
+			<enclosure url="https://anchor.fm/s/3fe46774/podcast/play/23072553/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2020-10-24%2F8fbc740d-36b6-74d1-2634-45e9d3826e04.mp3" length="25521169" type="audio/mpeg"/>
+			<itunes:summary>&lt;p&gt;In this episode hear Dr. McClowry, creator of INSIGHTS discusses COVID-19 measures for children during the holidays with Business Manager Heather Nunes and Graphic Designer and Social Media Manager, Amour Castillo. SPECIAL GUEST: Jessie speaks with Amour about Christmas and Thanksgiving 🍁&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Episode Resources:&amp;nbsp;&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://insightsintervention.com/&quot; target=&quot;_blank&quot;&gt;INSIGHTS Website&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://steinhardt.nyu.edu/people/sandee-mcclowry&quot; target=&quot;_blank&quot;&gt;Dr. McClowry’s Bio&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://insightsintervention.com/product/middle-school-virtual-support-group-11-19-12-3-12-10-12-17/&quot; target=&quot;_blank&quot;&gt;Middle School Virtual Support Group&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://insightsintervention.com/insights-media/your-childs-unique-temperament-insights-and-strategies-for-responsive-parenting/&quot; target=&quot;_blank&quot;&gt;Book for Parents&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://insightsintervention.com/project-category/books-for-schools/&quot; target=&quot;_blank&quot;&gt;Books for Educators&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;----------&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.parents.com/holiday/thanksgiving/crafts/&quot; target=&quot;_blank&quot;&gt;Thanksgiving crafts&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.foodnetwork.com/recipes/patrick-and-gina-neely/apple-crisp-recipe-1953209&quot; target=&quot;_blank&quot;&gt;Thanksgiving Recipe: Apple Crisp&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;--------&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.parents.com/holiday/hanukkah/crafts/festive-and-fun-hanukkah-crafts-and-recipes/&quot; target=&quot;_blank&quot;&gt;Hanukkah&amp;nbsp;crafts&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Rene&apos;s recommendations (listen to her in the bonus episode coming up!):&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.marthastewart.com/331738/potato-latkes&quot; target=&quot;_blank&quot;&gt;Hanukkah Recipe: Potato Latkes (Rene doesn&apos;t use the beer)&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.myjewishlearning.com/recipe/sufganiyot/&quot; target=&quot;_blank&quot;&gt;Hanukkah Recipe: Sufganuiot&amp;nbsp;(Doughnuts)&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://pjlibrary.org/home&quot; target=&quot;_blank&quot;&gt;PJ Library: Books &amp;amp; Activities for Jewish Families&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.myjewishlearning.com/category/celebrate/&quot; target=&quot;_blank&quot;&gt;My Jewish Learning: Holiday Resource for Jewish Families&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;--------&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.marthastewart.com/275049/affordable-christmas-crafts&quot; target=&quot;_blank&quot;&gt;Christmas crafts&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.foodnetwork.com/recipes/alton-brown/sugar-cookies-recipe-1914697&quot; target=&quot;_blank&quot;&gt;Christmas Recipe: Sugar Cookies&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;--------&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.dltk-kids.com/crafts/kwanzaa/&quot; target=&quot;_blank&quot;&gt;Kwanzaa crafts&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.foodnetwork.com/recipes/calleys-sweet-potato-pie-recipe-2085595&quot; target=&quot;_blank&quot;&gt;Kwanzaa Recipe: Sweet Potato Pie&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;--------&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.parents.com/holiday/new-years/crafts/ring-in-the-new-year/?slide=slide_e3c82d49-af8f-4b42-9c8e-c6d675e859e2#slide_e3c82d49-af8f-4b42-9c8e-c6d675e859e2&quot; target=&quot;_blank&quot;&gt;New Year&apos;s crafts&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://niftymom.com/2015/12/kid-friendly-years-eve-treat-clock-marshmallow-pops/&quot; target=&quot;_blank&quot;&gt;New Year&apos;s Recipe:&amp;nbsp;Clock Marshmallow Pops&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;--------&lt;/p&gt;
+&lt;p&gt;Love you Free Design (Music)&lt;/p&gt;
+</itunes:summary>
+			<itunes:explicit>No</itunes:explicit>
+			<itunes:duration>1619</itunes:duration>
+			<itunes:image href="https://d3t3ozftmdmh3i.cloudfront.net/production/podcast_uploaded_nologo/10619333/10619333-1605304144963-246c0a891023f.jpg"/>
+			<itunes:season>1</itunes:season>
+			<itunes:episode>2</itunes:episode>
+			<itunes:episodeType>full</itunes:episodeType>
+		</item>
+		<item>
+			<title><![CDATA[S1E1: Introducing INSIGHTS the Podcast ]]></title>
+			<description><![CDATA[<p>INSIGHTS the Podcast is brought to you by Dr. Sandee McClowry, Ph.D., RN, FAAN, and Professor Emerita at New York University.&nbsp; Dr. McClowry is the developer of&nbsp;<em>INSIGHTS into Children's Temperament,&nbsp;</em>a social-emotional learning program for children, teachers, and parents.<em> </em>INSIGHTS the Podcast<em> </em>will feature valuable conversations with mental health professionals, teachers, researchers, and parents.</p>
+<p><strong>Resources:</strong></p>
+<p>INSIGHTS Website: <a href="https://insightsintervention.com/" target="_blank">https://insightsintervention.com</a></p>
+<p>Dr. McClowry’s Bio: <a href="https://steinhardt.nyu.edu/people/sandee-mcclowry" target="_blank">https://steinhardt.nyu.edu/people/sandee-mcclowry</a></p>
+<p>Middle School Virtual Support Group: <a href="https://insightsintervention.com/product/middle-school-virtual-support-group-11-19-12-3-12-10-12-17/" target="_blank">https://insightsintervention.com/product/middle-school-virtual-support-group-11-19-12-3-12-10-12-17/</a></p>
+<p>Book for Parents: <a href="https://insightsintervention.com/insights-media/your-childs-unique-temperament-insights-and-strategies-for-responsive-parenting/" target="_blank">https://insightsintervention.com/insights-media/your-childs-unique-temperament-insights-and-strategies-for-responsive-parenting/</a></p>
+<p>Books for Educators: <a href="https://insightsintervention.com/project-category/books-for-schools/" target="_blank">https://insightsintervention.com/project-category/books-for-schools/</a></p>
+<p><strong>Intro music credit:</strong> Love you by Free Design (all rights reserved to the respected owners, we have been granted permission to use)</p>
+]]></description>
+			<link>https://anchor.fm/insightspodcast/episodes/S1E1-Introducing-INSIGHTS-the-Podcast-emd2on</link>
+			<guid isPermaLink="false">10c38ac2-969e-4084-a14f-bd046ec46508</guid>
+			<dc:creator><![CDATA[INSIGHTS the Podcast]]></dc:creator>
+			<pubDate>Fri, 13 Nov 2020 21:47:35 GMT</pubDate>
+			<enclosure url="https://anchor.fm/s/3fe46774/podcast/play/22497495/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2020-10-12%2F53ff7266-aceb-9fdf-d644-f3e7310ae9ef.mp3" length="9656545" type="audio/mpeg"/>
+			<itunes:summary>&lt;p&gt;INSIGHTS the Podcast is brought to you by Dr. Sandee McClowry, Ph.D., RN, FAAN, and Professor Emerita at New York University.&amp;nbsp; Dr. McClowry is the developer of&amp;nbsp;&lt;em&gt;INSIGHTS into Children&apos;s Temperament,&amp;nbsp;&lt;/em&gt;a social-emotional learning program for children, teachers, and parents.&lt;em&gt; &lt;/em&gt;INSIGHTS the Podcast&lt;em&gt; &lt;/em&gt;will feature valuable conversations with mental health professionals, teachers, researchers, and parents.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Resources:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;INSIGHTS Website: &lt;a href=&quot;https://insightsintervention.com/&quot; target=&quot;_blank&quot;&gt;https://insightsintervention.com&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Dr. McClowry’s Bio: &lt;a href=&quot;https://steinhardt.nyu.edu/people/sandee-mcclowry&quot; target=&quot;_blank&quot;&gt;https://steinhardt.nyu.edu/people/sandee-mcclowry&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Middle School Virtual Support Group: &lt;a href=&quot;https://insightsintervention.com/product/middle-school-virtual-support-group-11-19-12-3-12-10-12-17/&quot; target=&quot;_blank&quot;&gt;https://insightsintervention.com/product/middle-school-virtual-support-group-11-19-12-3-12-10-12-17/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Book for Parents: &lt;a href=&quot;https://insightsintervention.com/insights-media/your-childs-unique-temperament-insights-and-strategies-for-responsive-parenting/&quot; target=&quot;_blank&quot;&gt;https://insightsintervention.com/insights-media/your-childs-unique-temperament-insights-and-strategies-for-responsive-parenting/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Books for Educators: &lt;a href=&quot;https://insightsintervention.com/project-category/books-for-schools/&quot; target=&quot;_blank&quot;&gt;https://insightsintervention.com/project-category/books-for-schools/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Intro music credit:&lt;/strong&gt; Love you by Free Design (all rights reserved to the respected owners, we have been granted permission to use)&lt;/p&gt;
+</itunes:summary>
+			<itunes:explicit>No</itunes:explicit>
+			<itunes:duration>658</itunes:duration>
+			<itunes:image href="https://d3t3ozftmdmh3i.cloudfront.net/production/podcast_uploaded_episode/10619333/10619333-1605203461100-51af53547bb4b.jpg"/>
+			<itunes:season>1</itunes:season>
+			<itunes:episode>1</itunes:episode>
+			<itunes:episodeType>full</itunes:episodeType>
+		</item>
+	</channel>
+</rss>
