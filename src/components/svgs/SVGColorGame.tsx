@@ -1,6 +1,8 @@
 import React from "react";
 import { Button, View } from "react-native";
 import { DrawingButton } from "./common";
+import ColorPicker from "../ColorPicker";
+
 
 interface SVGColorGameProps {
     componentSVG: JSX.Element;
@@ -19,7 +21,7 @@ export const SVGColorGame = (props: SVGColorGameProps) => {
                     )
             }
             {props.componentSVG}
-            {/* RENDER COLOR PALLETE (pass in setSelectedColor so it can updated selectedColor)*/}
+            <ColorPicker setColor={setSelectedColor}/>
         </View>
     )
 }
