@@ -14,12 +14,12 @@ interface BlogPostProps {
 
 const BlogPost = (props: BlogPostProps) => {
     const contentWidth = useWindowDimensions().width;
-
+    const openBlogPost = () => Linking.openURL(props.blogPost.link);
     return (
     <>
         <View style={globalStyles.container}>
             <View style={[styles.card, globalStyles.dropShadow]}>
-                <TextNeutraBold style={styles.title}>
+                <TextNeutraBold style={styles.title} onClick={openBlogPost}>
                     {props.blogPost.title.rendered}
                 </TextNeutraBold>
                 <TextNeutraBold color='gray'>
@@ -30,7 +30,7 @@ const BlogPost = (props: BlogPostProps) => {
                     <HTML source={{ html: props.blogPost.content.rendered + '<hr />' }} contentWidth={contentWidth} />
                     {/*props.blogPost.content.rendered*/}
                 </TextDescription>
-                <TextNeutraBold style={[styles.link, globalStyles.alignCenter]} onClick={() => Linking.openURL(props.blogPost.link)}>
+                <TextNeutraBold style={[styles.link, globalStyles.alignCenter]} onClick={openBlogPost}>
                     Read on the website!
                 </TextNeutraBold>
             </View>

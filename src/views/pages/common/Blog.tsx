@@ -5,7 +5,6 @@ import BlogPost from '../../../components/BlogPost';
 import AppPage from '../../common/AppPage';
 import TextNeutraBold from '../../../components/texts/TextNeutraBold'
 import globalStyles from '../../../../styles/global';
-import TextPageHeader from '../../../components/texts/TextPageHeader';
 
 const queryClient = new QueryClient();
 
