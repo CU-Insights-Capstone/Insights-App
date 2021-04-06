@@ -31,13 +31,13 @@ const hardCodedData = [{
 {
   date: "December 1, 2020",
   title: "S1E3: Teaching INSIGHTS: Nebraska",
-  description: "Welcome to the thrid episode of INISGHTS where you will hear from Dr. McClowry (of course) and Angie talk about INSIGHTS teaching in Nebraska with a SPECIAL GUEST at the end, Rene, speaking with Bussiness Manager, Heather, about Hanukkah and Jewish Traditions!",
+  description: "Welcome to the third episode of INSIGHTS where you will hear from Dr. McClowry (of course) and Angie talk about INSIGHTS teaching in Nebraska with a SPECIAL GUEST at the end, Rene, speaking with Bussiness Manager, Heather, about Hanukkah and Jewish Traditions!",
   url: "https://anchor.fm/s/3fe46774/podcast/play/23362196/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2020-11-1%2F36366cc6-07e1-be4a-25ea-0e9fafd79cf9.mp3"
 },
 {
   date: "November 24, 2020",
   title: "S1E2: INSIGHTS into the Holidays",
-  description: "In this episode hear Dr. McClowry, creator of INSIGHTS discusses COVID-19 measures for children during the holidays with Business Manager Heather Nunes and Graphic Designer and Social Media Manager, Amour Castillo. SPECIAL GUEST: Jessie speaks with Amour about Christmas and Thanksgiving 🍁",
+  description: "In this episode, hear Dr. McClowry, creator of INSIGHTS discusses COVID-19 measures for children during the holidays with Business Manager Heather Nunes and Graphic Designer and Social Media Manager, Amour Castillo. SPECIAL GUEST: Jessie speaks with Amour about Christmas and Thanksgiving 🍁",
   url: "https://anchor.fm/s/3fe46774/podcast/play/23072553/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2020-10-24%2F8fbc740d-36b6-74d1-2634-45e9d3826e04.mp3"
 },
 {
