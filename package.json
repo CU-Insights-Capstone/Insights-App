@@ -26,6 +26,7 @@
     "react-native-reanimated": "~1.13.0",
     "react-native-render-html": "^5.1.0",
     "react-native-screens": "~2.15.0",
+    "react-native-svg": "^12.1.0",
     "react-native-unimodules": "^0.13.0",
     "react-native-web": "^0.15.0",
     "react-query": "^3.12.1",
