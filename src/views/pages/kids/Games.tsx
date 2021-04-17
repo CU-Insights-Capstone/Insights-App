@@ -12,8 +12,8 @@ const Games = () => {
     <View>
       <Text>
         <GregoryColoringGame />
-        {/* <HilaryColoringGame /> */}
-        {/* <FredricoColoringGame /> */}
+        <HilaryColoringGame />
+        <FredricoColoringGame />
       </Text>
     </View>
   );

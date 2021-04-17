@@ -41,7 +41,7 @@ export const HilaryColoringGame = (props: HilaryColoringGameProps) => {
             {title: 'Pants', onClick: setPantsColor},
             {title: 'Patch', onClick: setPatchColor},
             {title: 'Buttons', onClick: setButtonColor},
-            {title: 'Text', onClick: setTextColor},
+            {title: 'Title', onClick: setTextColor},
             {title: 'Background', onClick: setbgColor},
             {title: 'Background Circles', onClick: setbgCirclesColor},
 

@@ -42,9 +42,6 @@ export const FredricoColoringGame = (props: FredricoColoringGameProps) => {
             handsColor={handsColor}
         />}
         colorButtons={[
-            {title: 'Text', onClick: setTextColor},
-            {title: 'Background 1', onClick: setbgOneColor},
-            {title: 'Background 2', onClick: setbgTwoColor},
             {title: 'Hat', onClick: setHatColor},
             {title: 'Hair', onClick: setHairColor},
             {title: 'Face', onClick: setFaceColor},
@@ -52,11 +49,13 @@ export const FredricoColoringGame = (props: FredricoColoringGameProps) => {
             {title: 'Nose', onClick: setNoseColor},
             {title: 'Mouth', onClick: setMouthColor},
             {title: 'Shirt Collar', onClick: setCollarColor},
-
             {title: 'Zipper', onClick: setZipperColor},
             {title: 'Shirt', onClick: setShirtColor},
             {title: 'Shirt Stripes', onClick: setStripesColor},
             {title: 'Hands', onClick: setHandsColor},
+            {title: 'Title', onClick: setTextColor},
+            {title: 'Background', onClick: setbgOneColor},
+            {title: 'Stripes', onClick: setbgTwoColor},
         ]}
     />
 }

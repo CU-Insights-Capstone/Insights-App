@@ -47,12 +47,12 @@ export const GregoryColoringGame = (props: GregoryColoringGameProps) => {
         colorButtons={[
             {title: 'Hair', onClick: setHairColor},
             {title: 'Face', onClick: setFaceColor},
-            {title: 'Background', onClick: setBackgroundColor1},
-            {title: 'Background', onClick: setBackgroundColor2},
             {title: 'Shirt', onClick: setShirtColor},
-            {title: 'Cuffs', onClick: setShirtCuffsColor},
+            {title: 'Cuff', onClick: setShirtCuffsColor},
             {title: 'Hand', onClick: setHandColor},
             {title: 'Flag', onClick: setFlagColor},
+            {title: 'Background', onClick: setBackgroundColor1},
+            {title: 'Stripes', onClick: setBackgroundColor2},
             {title: 'Title', onClick: setTitleColor},
         ]}
     />
