@@ -30,11 +30,13 @@ const ForKids = (): JSX.Element => {
 const styles = StyleSheet.create({
   buttonContainer: {
     alignItems: 'center',
+    width: '100%'
   },
   container: {
     flex: 1,
     alignItems: 'center',
-    justifyContent: 'center'
+    justifyContent: 'center',
+    width: '100%'
   }
 })
 
