@@ -1,35 +1,127 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { StyleSheet, View } from 'react-native';
-import { generateRandomLetter, generateWordSearchGame, WordSearchLocation, WordSearchRow } from './helpers';
+import TextNeutraBold from '../texts/TextNeutraBold';
+import { areLocationsTheSame, generateRandomLetter, generateWordSearchGame, getAllLocationsBetweenTwoPoints, handleClickPairInGame, handleClickReturnWordIfCorrect, WordSearchGameData, WordSearchLocation, WordSearchRow, WordSearchWord } from './helpers';
+import WordSearchCell from './WordSearchCell';
 
 export interface WordSearchGameProps {
     size: number;
     words: string[];
 }
 
-const WordSearchGame = (props: WordSearchGameProps): JSX.Element => {
-    const gameData = generateWordSearchGame(props);
+const cellIsInHighlightedCells = (cell: WordSearchLocation, cells: WordSearchLocation[]): boolean => {
+    for(let i = 0; i < cells.length; i++) {
+        if(cells[i].column === cell.column && cells[i].row === cell.row) return true;
+    }
+    return false;
+}
 
-    const rows = gameData.rows;
+enum WordSelectResults {
+    correct = 'yellow',
+    failure = 'red',
+    selecting = 'gray'
+}
+
+const WordSearchGame = (props: WordSearchGameProps): JSX.Element => {
+    const [gameData, setGameData] = React.useState(generateWordSearchGame(props));
+    const [gameFinished, setGameFinished] = React.useState(false);
+    const [firstClick, setFirstClick] = React.useState<WordSearchLocation | null>(null);
+    const [secondClick, setSecondClick] = React.useState<WordSearchLocation | null>(null);
+    const [selectedState, setSelectedState] = React.useState(WordSelectResults.selecting);
+
+
+    const crossedOutCells: WordSearchLocation[] = [];
+    gameData
+        .words
+        .filter((word: WordSearchWord) => word.found)
+        .forEach((word: WordSearchWord) => 
+            getAllLocationsBetweenTwoPoints(word.startLocation, word.endLocation).forEach(location => crossedOutCells.push(location))
+        );
+    const highlightedCells: WordSearchLocation[] = [];
+    if (firstClick && !secondClick) {
+        highlightedCells.push(firstClick);
+    } else if (firstClick && secondClick) {
+        if(
+            (firstClick.column === secondClick.column && firstClick.row === secondClick.row)
+            || !(firstClick.column === secondClick.column 
+            || firstClick.row === secondClick.row 
+            || (secondClick.row - firstClick.row) === (secondClick.column - firstClick.column))
+        ) {
+            // if invalid click
+            setFirstClick(null);
+            setSecondClick(null);
+        } else {
+            // if valid click
+            let x = firstClick.column;
+            let y = firstClick.row;
+            const dX = Math.sign(secondClick.column - firstClick.column);
+            const dY = Math.sign(secondClick.row - firstClick.row);
+            highlightedCells.push(firstClick);
+            while (x !== secondClick.column || y !== secondClick.row) {
+                x += dX;
+                y += dY;
+                highlightedCells.push({
+                    row: y,
+                    column: x,
+                    value: ''
+                });
+            }
+        }
+    }
+
+    const handleClick = (location: WordSearchLocation) => {
+        if (gameFinished) return;
+        if (firstClick === null) {
+            setFirstClick(location);
+        } else if (secondClick === null){
+            setSecondClick(location);
+        }
+    };
+
+    useEffect(() => {
+        if(firstClick && secondClick) {
+            const {word: respWord, game: respGame} = handleClickReturnWordIfCorrect(gameData, firstClick, secondClick);
+            setSelectedState(!!respWord ? WordSelectResults.correct : WordSelectResults.failure);
+            setTimeout(() => {
+                setGameData(respGame);
+                setFirstClick(null);
+                setSecondClick(null);
+                setSelectedState(WordSelectResults.selecting);
+                if (!!respWord) {
+                    const unsolvedWordExists = !!gameData.words.find(word => !word.found);
+                    setGameFinished(!unsolvedWordExists);
+                }
+            }, 1000);
+        }
+    }, [firstClick, secondClick]);
 
     const game = (
         <View style={styles.gameContainer}>
+            {gameFinished && <TextNeutraBold>Game Complete!</TextNeutraBold>}
             <table>
                 <tbody>
                     {
-                        rows.map((row: WordSearchRow, i: number) => {
+                        gameData.rows.map((row: WordSearchRow, row_num: number) => {
                             const cells = row.locations.map(
-                                (location: WordSearchLocation, i: number) => 
-                                    <td key={i} align='center' >{location.value}</td>
+                                (location: WordSearchLocation, col_num: number) =>
+                                    <WordSearchCell 
+                                        key={col_num}
+                                        onClick={() => handleClick(location)}
+                                        highlighted={cellIsInHighlightedCells(location, highlightedCells)}
+                                        crossedOut={cellIsInHighlightedCells(location, crossedOutCells)}
+                                        highlightColor={selectedState}
+                                        value={location.value}
+                                    />
                             );
-                            return <tr key={i}>{cells}</tr>;
+                            return <tr key={row_num}>{cells}</tr>;
                         })
                     }
                 </tbody>
             </table>
             <ul>
                 { 
-                    props.words.map((word: string, i: number) => <li key={i}>{ word }</li>)
+                    gameData.words.map((word: WordSearchWord, i: number) => 
+                        <li key={i} style={{textDecoration: word.found ? 'line-through' : undefined}}>{ word.word }</li>)
                 }
             </ul>
         </View>
@@ -39,7 +131,7 @@ const WordSearchGame = (props: WordSearchGameProps): JSX.Element => {
 const styles = StyleSheet.create({
     gameContainer: {
         width: '90%',
-        backgroundColor: '#eeeeee',
+        backgroundColor: '#dddddd',
     }
 });
 

@@ -5,6 +5,52 @@ export const generateRandomLetter = (): string => {
     return String.fromCharCode(97 + letterNumber).toUpperCase();
 }
 
+interface HandleClickDTO {
+    word: WordSearchWord | null;
+    game: WordSearchGameData;
+}
+
+export const handleClickReturnWordIfCorrect = (game: WordSearchGameData, click1: WordSearchLocation, click2: WordSearchLocation): HandleClickDTO => {
+    for(let i = 0; i < game.words.length; i++){
+        const word = game.words[i];
+        if(
+            (areLocationsTheSame(click1, word.startLocation) && areLocationsTheSame(click2, word.endLocation))
+            || (areLocationsTheSame(click2, word.startLocation) && areLocationsTheSame(click1, word.endLocation))
+        ) {
+            word.found = true;
+            return {
+                word: word,
+                game: game
+            }
+        }
+    }
+    return {
+        word: null,
+        game: game
+    };
+}
+
+export const areLocationsTheSame = (a: WordSearchLocation, b: WordSearchLocation): boolean =>
+    a.row === b.row && a.column === b.column;
+
+export const getAllLocationsBetweenTwoPoints = (a: WordSearchLocation, b: WordSearchLocation): WordSearchLocation[] => {
+    const cells: WordSearchLocation[] = [];
+    let x = a.column;
+    let y = a.row;
+    const dX = Math.sign(b.column - a.column);
+    const dY = Math.sign(b.row - a.row);
+    cells.push(a);
+    while (x !== b.column || y !== b.row) {
+        x += dX;
+        y += dY;
+        cells.push({
+            row: y,
+            column: x,
+            value: ''
+        });
+    }
+    return cells;
+}
 
 export const generateWordSearchGame = (props: WordSearchGameProps): WordSearchGameData => {
     const { rawGame, gameWords } = addAllWordsToGame(props.size, props.words);
@@ -87,6 +133,8 @@ const addAllWordsToGame = (size: number, words: string[]): GeneratedGame => {
                     movingLocation.column += directionModifier.dX;
                     i += 1;
                 }
+                movingLocation.row -= directionModifier.dY;
+                movingLocation.column -= directionModifier.dX;
                 gameWords.push({
                     word,
                     found: false,
@@ -171,6 +219,8 @@ export interface WordSearchWord {
 export interface WordSearchRow {
     locations: WordSearchLocation[];
 }
+
+const locationToString =  (loc: WordSearchLocation): string => `(${loc.column}, ${loc.row})`;
 
 export interface WordSearchLocation {
     row: number;
