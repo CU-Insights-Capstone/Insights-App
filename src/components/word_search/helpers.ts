@@ -199,11 +199,19 @@ interface DirectionModifier {
 }
 
 const allDirectionModifierOptions: DirectionModifier[] = [
-    {dX: 1, dY: 0},
-    {dX: 0, dY: 1},
-    //{dX: -1, dY: 0},
-    //{dX: 0, dY: -1},
-    {dX: 1, dY: 1}
+    {dX: 1, dY: 0}, // right
+    {dX: 0, dY: 1}, // down
+    {dX: 1, dY: 1} // right-down
+];
+const allDirectionModifierOptionsIncludingReverse: DirectionModifier[] = [
+    {dX: 1, dY: 0}, // right
+    {dX: 0, dY: 1}, // down
+    {dX: 1, dY: 1}, // right-down
+    {dX: -1, dY: 0}, // left
+    {dX: 0, dY: -1}, // up
+    {dX: -1, dY: -1}, // left-up
+    {dX: 1, dY: -1}, // right-up
+    {dX: -1, dY: 1} // left-down
 ];
 const getRandomDirectionModifier = (): DirectionModifier => {
     return allDirectionModifierOptions[Math.floor(Math.random() * allDirectionModifierOptions.length)];
