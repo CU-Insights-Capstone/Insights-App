@@ -1,4 +1,5 @@
 import React from 'react';
+import TextNeutraBold from '../texts/TextNeutraBold';
 
 interface WordSearchCellProps {
     onClick: () => void;
@@ -13,11 +14,11 @@ const WordSearchCell = (props: WordSearchCellProps): JSX.Element => {
         <td align='center'
             onClick={props.onClick}
             style={{
-                backgroundColor: props.highlighted ? props.highlightColor : (props.crossedOut ? '#dddddd' : 'white'),
+                backgroundColor: props.highlighted ? props.highlightColor : (props.crossedOut ? '#00B788' : 'white'),
                 textDecoration: props.crossedOut ? 'line-through' : undefined,
             }}
         >
-            { props.value }
+            <TextNeutraBold>{ props.value }</TextNeutraBold>
         </td>
     );
 };
