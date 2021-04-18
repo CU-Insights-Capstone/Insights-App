@@ -15,7 +15,11 @@ interface GregorySVGProps {
 
 export const GregorySVG = (props: GregorySVGProps) => {
   return (
-    <Svg id="Hair" viewBox="0 0 561.1183 657.6852" height="100%" width="100%" >
+    <Svg 
+    id="Layer_1"
+    data-name="Layer 1"
+    viewBox="0 0 561.1183 657.6852" 
+    {...props}> 
       <Path
         id="Mouth_Outline"
         data-name="Mouth Outline"

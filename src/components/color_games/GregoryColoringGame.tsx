@@ -7,20 +7,7 @@ interface GregoryColoringGameProps {
 }
 
 const default_color = '#ffffff';
-/*
-interface GregorySVGProps {
-  hairColor: string;
-  faceColor: string;
-  backgroundColor1: string;
-  backgroundColor2: string;
-  shirtColor: string;
-  shirtCuffsColor: string;
-  handColor: string;
-  flagColor: string;
-  titleColor: string;
-}
 
-*/
 export const GregoryColoringGame = (props: GregoryColoringGameProps) => {
     const [hairColor, setHairColor] = React.useState(default_color);
     const [faceColor, setFaceColor] = React.useState(default_color);
