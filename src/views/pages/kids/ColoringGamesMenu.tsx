@@ -28,12 +28,12 @@ const BUTTONS = [
     {
         pathName: 'Fredrico',
         title: 'Fredrico',
-        color: '#28CBD3'
+        color: '#00B788'
     },
     {
         pathName: 'Gregory',
         title: 'Gregory',
-        color: '#AD056C'
+        color: '#7e5ea4'
     },
     {
         pathName: 'Hilary',
@@ -43,7 +43,7 @@ const BUTTONS = [
     {
         pathName: 'Coretta',
         title: 'Coretta',
-        color: '#FF8D00'
+        color: '#AD056C'
     },
 ];
 
