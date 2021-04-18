@@ -44,8 +44,8 @@ export const HilaryColoringGame = (props: HilaryColoringGameProps) => {
             {title: 'Title', onClick: setTextColor},
             {title: 'Background', onClick: setbgColor},
             {title: 'Background Circles', onClick: setbgCirclesColor},
-
         ]}
+        pageTitle='Hilary'
     />
 }
 

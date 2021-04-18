@@ -55,6 +55,7 @@ export const GregoryColoringGame = (props: GregoryColoringGameProps) => {
             {title: 'Stripes', onClick: setBackgroundColor2},
             {title: 'Title', onClick: setTitleColor},
         ]}
+        pageTitle='Gregory'
     />
 }
 

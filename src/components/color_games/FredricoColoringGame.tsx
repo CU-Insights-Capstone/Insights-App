@@ -57,6 +57,7 @@ export const FredricoColoringGame = (props: FredricoColoringGameProps) => {
             {title: 'Background', onClick: setbgOneColor},
             {title: 'Stripes', onClick: setbgTwoColor},
         ]}
+        pageTitle='Fredrico'
     />
 }
 

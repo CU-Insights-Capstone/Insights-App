@@ -2,17 +2,19 @@ import React from "react";
 import { View, Text, StyleSheet, TouchableOpacity } from "react-native";
 import { DrawingButton } from "./common";
 import ColorPicker from "../ColorPicker";
+import AppPage from "../../views/common/AppPage";
 
 
 interface SVGColorGameProps {
     componentSVG: JSX.Element;
     colorButtons: DrawingButton[];
+    pageTitle: string;
 }
 
 export const SVGColorGame = (props: SVGColorGameProps) => {
     const [selectedColor, setSelectedColor] = React.useState('#000000');
 
-    return (
+    const pageContent = (
         <View style={{marginBottom:10, marginHorizontal:10}}>
             <View style={{flex: 1, flexDirection: 'row', justifyContent: 'space-around', alignItems: 'center', alignSelf: 'center', flexWrap: 'wrap'}}>
             {
@@ -28,7 +30,8 @@ export const SVGColorGame = (props: SVGColorGameProps) => {
             {props.componentSVG}
             
         </View>
-    )
+    );
+    return <AppPage display={pageContent} title={props.pageTitle} />;
 }
 
 const styles = StyleSheet.create({
