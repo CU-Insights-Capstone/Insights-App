@@ -17,9 +17,9 @@ const cellIsInHighlightedCells = (cell: WordSearchLocation, cells: WordSearchLoc
 }
 
 enum WordSelectResults {
-    correct = 'yellow',
+    correct = '#FFE96D',
     failure = 'red',
-    selecting = 'gray'
+    selecting = '#28CBD3'
 }
 
 const WordSearchGame = (props: WordSearchGameProps): JSX.Element => {
@@ -97,7 +97,6 @@ const WordSearchGame = (props: WordSearchGameProps): JSX.Element => {
 
     const game = (
         <View style={styles.gameContainer}>
-            {gameFinished && <TextNeutraBold>Game Complete!</TextNeutraBold>}
             <table>
                 <tbody>
                     {
@@ -121,9 +120,14 @@ const WordSearchGame = (props: WordSearchGameProps): JSX.Element => {
             <ul>
                 { 
                     gameData.words.map((word: WordSearchWord, i: number) => 
-                        <li key={i} style={{textDecoration: word.found ? 'line-through' : undefined}}>{ word.word }</li>)
+                        <li key={i} style={{textDecoration: word.found ? 'line-through' : undefined}}>
+                            <TextNeutraBold>{ word.word }</TextNeutraBold>
+                        </li>)
                 }
             </ul>
+            <View style={{alignItems: 'center'}}>
+                {gameFinished && <TextNeutraBold style={{fontSize:30, padding:20, color: '#00B788'}}>Game Complete!</TextNeutraBold>}
+            </View>
         </View>
     );
     return game;
@@ -132,6 +136,11 @@ const styles = StyleSheet.create({
     gameContainer: {
         width: '90%',
         backgroundColor: '#dddddd',
+        paddingTop: 10,
+        paddingRight: 10,
+        paddingLeft: 10,
+        paddingBottom: 2,
+        borderRadius: 10,
     }
 });
 

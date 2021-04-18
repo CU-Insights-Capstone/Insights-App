@@ -1,9 +1,10 @@
 import React from 'react';
+import { View } from 'react-native';
 import TextNeutraBold from "../../../components/texts/TextNeutraBold";
 import WordSearchGame from '../../../components/word_search/WordSearchGame';
 import AppPage from '../../common/AppPage';
 
-const WORD_SEARCH_SIZE = 14;
+const WORD_SEARCH_SIZE = 12;
 const WORDS = [
     'Insights',
     'Gregory',
@@ -15,10 +16,13 @@ const WORDS = [
 const WordSearch = (): JSX.Element => {
 
     const pageContent = (
-        <WordSearchGame
-            size={WORD_SEARCH_SIZE}
-            words={WORDS}
-        />
+        <View style={{alignItems: 'center'}}>
+            <TextNeutraBold style={{fontSize:20, padding:20, color:'white'}}>Find a word by tapping on it's first and last letter.</TextNeutraBold>
+            <WordSearchGame
+                size={WORD_SEARCH_SIZE}
+                words={WORDS}
+            />
+        </View>
     );
 
     return <AppPage display={pageContent} title='Word Search' />;
