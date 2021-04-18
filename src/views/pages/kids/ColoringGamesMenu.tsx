@@ -26,17 +26,17 @@ const styles = StyleSheet.create({
 
 const BUTTONS = [
     {
-        pathName: 'FredricoSVG',
+        pathName: 'Fredrico',
         title: 'Fredrico',
         color: '#28CBD3'
     },
     {
-        pathName: 'GregorySVG',
+        pathName: 'Gregory',
         title: 'Gregory',
         color: '#AD056C'
     },
     {
-        pathName: 'HilarySVG',
+        pathName: 'Hilary',
         title: 'Hilary',
         color: '#FF8D00'
     },

@@ -35,12 +35,12 @@ const styles = StyleSheet.create({
 
 const BUTTONS = [
   {
-      pathName: 'ColoringGamesMenu',
+      pathName: 'Coloring Games',
       title: 'Color Our Puppets',
       color: '#28CBD3'
   },
   {
-      pathName: 'WordSearchGame',
+      pathName: 'Word Search',
       title: 'Word Search',
       color: '#FF8D00'
   },

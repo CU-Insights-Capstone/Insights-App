@@ -37,11 +37,11 @@ const App = (): JSX.Element => {
 
           <Stack.Screen name='Games' component={Games} />
 
-          <Stack.Screen name='ColoringGamesMenu' component={ColoringGamesMenu}/>
+          <Stack.Screen name='Coloring Games' component={ColoringGamesMenu}/>
 
-          <Stack.Screen name='FredricoSVG' component={FredricoColoringGame}/>
-          <Stack.Screen name='GregorySVG' component={GregoryColoringGame}/>
-          <Stack.Screen name='HilarySVG' component={HilaryColoringGame}/>
+          <Stack.Screen name='Fredrico' component={FredricoColoringGame}/>
+          <Stack.Screen name='Gregory' component={GregoryColoringGame}/>
+          <Stack.Screen name='Hilary' component={HilaryColoringGame}/>
         </Stack.Navigator>
       </NavigationContainer>
   );
