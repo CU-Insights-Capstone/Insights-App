@@ -14,6 +14,7 @@ import ColoringGamesMenu from './views/pages/kids/ColoringGamesMenu';
 import FredricoColoringGame from './components/color_games/FredricoColoringGame';
 import GregoryColoringGame from './components/color_games/GregoryColoringGame';
 import HilaryColoringGame from './components/color_games/HilaryColoringGame';
+import CorettaColoringGame from './components/color_games/CorettaColoringGame';
 
 const Stack = createStackNavigator();
 
@@ -42,6 +43,7 @@ const App = (): JSX.Element => {
           <Stack.Screen name='Fredrico' component={FredricoColoringGame}/>
           <Stack.Screen name='Gregory' component={GregoryColoringGame}/>
           <Stack.Screen name='Hilary' component={HilaryColoringGame}/>
+          <Stack.Screen name='Coretta' component={CorettaColoringGame}/>
         </Stack.Navigator>
       </NavigationContainer>
   );

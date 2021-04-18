@@ -40,6 +40,11 @@ const BUTTONS = [
         title: 'Hilary',
         color: '#FF8D00'
     },
+    {
+        pathName: 'Coretta',
+        title: 'Coretta',
+        color: '#FF8D00'
+    },
 ];
 
 export default ColoringGamesMenu;

@@ -1,6 +1,7 @@
 import React from "react";
 import { View, Text, StyleSheet, TouchableOpacity } from "react-native";
 import { DrawingButton } from "./common";
+import TextNeutraBold from '../texts/TextNeutraBold';
 import ColorPicker from "../ColorPicker";
 import AppPage from "../../views/common/AppPage";
 
@@ -16,6 +17,7 @@ export const SVGColorGame = (props: SVGColorGameProps) => {
 
     const pageContent = (
         <View style={{marginBottom:10, marginHorizontal:10}}>
+            <TextNeutraBold style={styles.text}> Select a color then a section to watch your puppet come to life! </TextNeutraBold>
             <View style={{flex: 1, flexDirection: 'row', justifyContent: 'space-around', alignItems: 'center', alignSelf: 'center', flexWrap: 'wrap'}}>
             {
                 props.colorButtons.map(
@@ -49,6 +51,12 @@ const styles = StyleSheet.create({
         fontSize: 15,
         color:'#ffffff',
         textAlign: 'center',
+    },
+    text: {
+        color:'#ffffff', 
+        fontSize: 20, 
+        marginBottom: 10, 
+        marginHorizontal: 15
     }
 });
 
