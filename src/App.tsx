@@ -10,6 +10,10 @@ import Games from './views/pages/kids/Games';
 import Home from './views/pages/Home';
 import MeetTheKids from './views/pages/common/MeetTheKids';
 import Podcast from './views/pages/common/Podcasts';
+import ColoringGamesMenu from './views/pages/kids/ColoringGamesMenu';
+import FredricoColoringGame from './components/color_games/FredricoColoringGame';
+import GregoryColoringGame from './components/color_games/GregoryColoringGame';
+import HilaryColoringGame from './components/color_games/HilaryColoringGame';
 
 const Stack = createStackNavigator();
 
@@ -32,6 +36,12 @@ const App = (): JSX.Element => {
           <Stack.Screen name='INSIGHTS Podcast' component={Podcast} />
 
           <Stack.Screen name='Games' component={Games} />
+
+          <Stack.Screen name='Coloring Games' component={ColoringGamesMenu}/>
+
+          <Stack.Screen name='Fredrico' component={FredricoColoringGame}/>
+          <Stack.Screen name='Gregory' component={GregoryColoringGame}/>
+          <Stack.Screen name='Hilary' component={HilaryColoringGame}/>
         </Stack.Navigator>
       </NavigationContainer>
   );
