@@ -52,7 +52,7 @@ const Home = () => {
             <View style={{flex: 1, flexDirection: 'row', alignSelf: 'center'}}>
                 <SocialIcon onPress={() => Linking.openURL('https://www.facebook.com/insightsintervention/')}
                             type='facebook' light/>
-                <SocialIcon onPress={() => Linking.openURL('https://twitter.com/sandeemcclowry')} type='twitter' light/>
+                <SocialIcon onPress={() => Linking.openURL('https://twitter.com/INSIGHTSKids')} type='twitter' light/>
                 <SocialIcon onPress={() => Linking.openURL('https://www.instagram.com/insightsintervention/')}
                             type='instagram' light/>
             </View>
