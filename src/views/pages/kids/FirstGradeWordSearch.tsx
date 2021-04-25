@@ -6,11 +6,16 @@ import AppPage from '../../common/AppPage';
 
 const WORD_SEARCH_SIZE = 12;
 const WORDS = [
-    'Insights',
-    'Gregory',
-    'Hilary',
-    'Fredrico',
-    'Coretta'
+    'Gretchen',
+    'Henry',
+    'Felicity',
+    'Carlos',
+    'fish',
+    'afraid',
+    'excited',
+    'sad',
+    'Grandma',
+    'cupcake'
 ].map(word => word.toUpperCase());
 
 const WordSearch = (): JSX.Element => {
@@ -25,7 +30,7 @@ const WordSearch = (): JSX.Element => {
         </View>
     );
 
-    return <AppPage display={pageContent} title='Word Search' />;
+    return <AppPage display={pageContent} title='First Grade Word Search' />;
 }
 
 export default WordSearch;

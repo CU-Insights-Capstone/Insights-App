@@ -40,9 +40,14 @@ const BUTTONS = [
       color: '#28CBD3'
   },
   {
-      pathName: 'Word Search',
-      title: 'Word Search',
-      color: '#FF8D00'
+    pathName: 'Kindergarten Word Search',
+    title: 'Kindergarten Word Search',
+    color: '#FF8D00'
+  },
+  {
+      pathName: 'First Grade Word Search',
+      title: 'First Grade Word Search',
+      color: '#AD056C'
   },
 ];
 
