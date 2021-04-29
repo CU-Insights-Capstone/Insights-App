@@ -16,7 +16,6 @@ const WORDS = [
     'unique',
     'easy',
     'challenging'
-
 ].map(word => word.toUpperCase());
 
 const WordSearch = (): JSX.Element => {
