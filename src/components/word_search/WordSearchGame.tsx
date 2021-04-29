@@ -141,6 +141,7 @@ const styles = StyleSheet.create({
         paddingLeft: 10,
         paddingBottom: 2,
         borderRadius: 10,
+        marginBottom: 10,
     }
 });
 
