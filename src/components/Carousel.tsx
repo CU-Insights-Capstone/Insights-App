@@ -122,14 +122,6 @@ const Carousel = ({pages, isSimple}: CarouselProps) => {
                         {pages[pageNumber].names[1].toUpperCase()}
                     </TextNeutraBold>
                 </View>
-                
-                {/* Not sure if we need the website link for the kids view*/}
-                {/* <View style={styles.linkPosition}>
-                    <TextNeutraBold style={[styles.link, styles.textDropShadow, globalStyles.alignCenter]}
-                                    onClick={() => Linking.openURL(pages[pageNumber].link)}>
-                        Learn More!
-                    </TextNeutraBold>
-                </View> */}
             </View>
             <View style={globalStyles.horizontalAlign}>
                 <AppImage
@@ -165,7 +157,7 @@ const styles = StyleSheet.create({
         paddingTop: 10,
         paddingRight: 10,
         paddingLeft: 10,
-        paddingBottom: 2
+        paddingBottom: 15
     },
     characteristicArrow: {
         width: 40,
@@ -195,12 +187,11 @@ const styles = StyleSheet.create({
     link: {
         color: '#28CBD3',
         fontSize: 20,
-        marginTop: 10,
+        marginBottom: 10,
         textDecorationLine: 'underline',
     },
     linkPosition: {
-        position: 'absolute',
-        bottom: 10,
+        marginBottom: 10,
         alignSelf: 'center'
     },
     name: {
