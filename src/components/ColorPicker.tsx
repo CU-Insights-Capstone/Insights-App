@@ -2,7 +2,7 @@ import React from "react";
 import {View, StyleSheet, TouchableOpacity, Text} from "react-native";
 
 const colors: string[] = [
-    '#EC1B24',    // red
+    '#EC1B24', // red
     '#FF8D00', // orange
     '#FFC600', // dark yellow
     '#ffe96d', // light yellow
