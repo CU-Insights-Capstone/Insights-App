@@ -2,6 +2,7 @@ import React from "react";
 import {View, StyleSheet, TouchableOpacity, Text} from "react-native";
 
 const colors: string[] = [
+    '#EC1B24',    // red
     '#FF8D00', // orange
     '#FFC600', // dark yellow
     '#ffe96d', // light yellow
@@ -18,10 +19,11 @@ const colors: string[] = [
     '#fff',    // white
     '#ebedec', // light gray
     '#afafb1', // gray
-    '#000',    // black
+    '#000',    // black,
 ];
 
 interface colorPickerProps {
+    currentColor: string;
     setColor: (color: string) => void;
 }
 
@@ -31,7 +33,22 @@ export const ColorPicker = (props: colorPickerProps) => {
         <View style={styles.colorContainer}>
             {
                 colors.map((color: string) => {
-                    return <TouchableOpacity style={{backgroundColor:color, width: 30, height: 30, borderRadius: 30, padding: 6, margin: 3, borderWidth: 2, borderColor: '#fff',}}  onPress={() => props.setColor(color)} ></TouchableOpacity>
+                    const isActive = color === props.currentColor;
+                    return <TouchableOpacity style={{
+                        backgroundColor:color,
+                        width: 30,
+                        height: 30,
+                        borderRadius: 30,
+                        padding: 6,
+                        margin: 3,
+                        borderWidth: isActive ? 4 : 2,
+                        borderColor: '#fff',
+                        shadowColor: isActive ? '#000': undefined,
+                        shadowOffset: isActive ? { width: 3, height: 4 }: undefined,
+                        shadowOpacity: isActive ? 0.6: undefined,
+                        shadowRadius: isActive ? 8: undefined,
+                        elevation: isActive ? 5: undefined                
+                    }}  onPress={() => props.setColor(color)} ></TouchableOpacity>
                 })
             }
         </View>

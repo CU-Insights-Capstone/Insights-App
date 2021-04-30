@@ -28,7 +28,7 @@ export const SVGColorGame = (props: SVGColorGameProps) => {
                     )
             }
             </View>
-            <ColorPicker setColor={setSelectedColor}/>
+            <ColorPicker setColor={setSelectedColor} currentColor={selectedColor}/>
             {props.componentSVG}
             
         </View>
