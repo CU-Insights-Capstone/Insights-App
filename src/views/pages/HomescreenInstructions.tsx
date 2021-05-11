@@ -2,12 +2,20 @@ import React from 'react';
 import AppPage from '../common/AppPage';
 import { StyleSheet, View } from 'react-native';
 import globalStyles from '../../../styles/global';
+import TextNeutraBold from "../../components/texts/TextNeutraBold";
+import TextDescription from '../../components/texts/TextDescription';
 
 const HomescreenInstructionsPage = (): JSX.Element => {
 
     const pageContent = (
         <View style={globalStyles.container}>
             <View style={[styles.card, globalStyles.dropShadow]}>
+                <TextNeutraBold style={{textAlign: 'center', fontSize: 35}}> How to </TextNeutraBold>
+                <TextDescription style={{fontSize: 25, padding: '20px'}}>1. Click the share button (Safari) or more options (Chrome)</TextDescription>
+                <TextDescription style={{fontSize: 25, padding: '10px'}}>2. Click Add to Home Screen</TextDescription>
+                <TextDescription style={{fontSize: 25, padding: '10px'}}>3. Click Add</TextDescription>
+            </View>
+            {/* <View style={[styles.card, globalStyles.dropShadow]}>
                 <h2 style={{textAlign: 'center'}}>Safari Instructions</h2>
                 <ol>
                     <li>Click the share button.</li>
@@ -22,7 +30,7 @@ const HomescreenInstructionsPage = (): JSX.Element => {
                     <li style={{marginTop: '10px'}}>Click 'Add to Home screen' button.</li>
                     <li style={{marginTop: '10px'}}>Click 'Add'.</li>
                 </ol>
-            </View>
+            </View> */}
         </View>
     );
 
