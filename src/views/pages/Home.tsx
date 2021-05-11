@@ -29,6 +29,15 @@ const Home = () => {
                 ))}
             </View>
             <View style={{alignItems: 'center'}}>
+                <View style={[styles.alignRow, {paddingTop: 10}]}>
+                    <TextNeutraBold style={[{
+                        textDecorationLine: 'underline',
+                        fontSize: 20
+                    }, globalStyles.alignCenter, globalStyles.textDropShadow]}
+                                    onClick={() => navigation.navigate('Add To Homescreen')}>
+                        Add App To Homescreen
+                    </TextNeutraBold>
+                </View>
                 <View
                     style={{
                         borderBottomColor: '#43525A',

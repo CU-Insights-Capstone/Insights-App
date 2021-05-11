@@ -17,6 +17,7 @@ import HilaryColoringGame from './components/color_games/HilaryColoringGame';
 import CorettaColoringGame from './components/color_games/CorettaColoringGame';
 import FirstGradeWordSearch from './views/pages/kids/FirstGradeWordSearch';
 import KindergartenWordSearch from './views/pages/kids/KindergartenWordSearch';
+import HomescreenInstructionsPage from './views/pages/HomescreenInstructions';
 
 const Stack = createStackNavigator();
 
@@ -25,6 +26,7 @@ const App = (): JSX.Element => {
       <NavigationContainer theme={INSIGHTSTheme}>
         <Stack.Navigator initialRouteName='Home'>
           <Stack.Screen name='Home' component={Home} options={{headerShown: false}}/>
+          <Stack.Screen name='Add To Homescreen' component={HomescreenInstructionsPage} />
 
           <Stack.Screen name='For Parents' component={ForParents} />
 
